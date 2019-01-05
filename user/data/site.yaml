@@ -1,0 +1,21 @@
+# Home Page Title
+title: 'PHIL IS BACK'
+description: 'FILL ME WITH GOOD STUFF'
+
+author:
+  name: 'Mesut Koca'
+  email: youremail@domain.com
+  # Avatar image optional (under your/site/user/themes/masonry/images/avatar.png)
+  image: avatar.png
+  # Optional
+  link: 'https://twitter.com/twitterusername'
+  # Optional
+  location: Germany
+  # Optional
+  bio: 'Type something cool here.'
+
+
+# Optional
+disqus: disqususername
+# Optional (under your/site/user/themes/masonry/images/logofile.png)
+logo: logofile.png

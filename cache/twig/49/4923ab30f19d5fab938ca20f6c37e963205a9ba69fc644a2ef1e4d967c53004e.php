@@ -17,9 +17,9 @@ class __TwigTemplate_be4938a40c05ba08c078546df4457f82886768673eeb61fac78ad2cb895
     {
         // line 1
         echo "<header class=\"main-header post-head ";
-        if ($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "image", array())) {
+        if ($this->getAttribute((isset($context["header"]) ? $context["header"] : null), "image", array())) {
             echo "\" style=\"background-image: url(";
-            echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "image", array()), array(), "array"), "url", array());
+            echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), $this->getAttribute(twig_first($this->env, $this->getAttribute((isset($context["header"]) ? $context["header"] : null), "image", array())), "name", array()), array(), "array"), "url", array());
             echo ")";
         } else {
             echo "no-cover";
@@ -27,7 +27,7 @@ class __TwigTemplate_be4938a40c05ba08c078546df4457f82886768673eeb61fac78ad2cb895
         echo "\">
     <nav class=\"main-nav ";
         // line 2
-        if ($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "image", array())) {
+        if ($this->getAttribute((isset($context["header"]) ? $context["header"] : null), "image", array())) {
             echo "overlay";
         }
         echo " clearfix\">
@@ -51,8 +51,13 @@ class __TwigTemplate_be4938a40c05ba08c078546df4457f82886768673eeb61fac78ad2cb895
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->translate("THEME_MASONRY.MENU_TITLE");
         echo "</span></a>
     </nav>
-</header>
+</header> 
+
 ";
+        // line 10
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->dump($this->env, $context, $this->getAttribute(twig_first($this->env, $this->getAttribute((isset($context["header"]) ? $context["header"] : null), "image", array())), "name", array()));
+        echo "
+   ";
     }
 
     public function getTemplateName()
@@ -67,7 +72,7 @@ class __TwigTemplate_be4938a40c05ba08c078546df4457f82886768673eeb61fac78ad2cb895
 
     public function getDebugInfo()
     {
-        return array (  50 => 6,  38 => 4,  36 => 3,  30 => 2,  19 => 1,);
+        return array (  58 => 10,  50 => 6,  38 => 4,  36 => 3,  30 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -80,14 +85,16 @@ class __TwigTemplate_be4938a40c05ba08c078546df4457f82886768673eeb61fac78ad2cb895
 
     public function getSourceContext()
     {
-        return new Twig_Source("<header class=\"main-header post-head {% if page.header.image %}\" style=\"background-image: url({{ page.media[page.header.image].url }}){% else %}no-cover{% endif %}\">
-    <nav class=\"main-nav {% if page.header.image %}overlay{% endif %} clearfix\">
+        return new Twig_Source("<header class=\"main-header post-head {% if header.image %}\" style=\"background-image: url({{ page.media[header.image|first.name].url }}){% else %}no-cover{% endif %}\">
+    <nav class=\"main-nav {% if header.image %}overlay{% endif %} clearfix\">
         {% if site.logo %}
             <a class=\"blog-logo\" href=\"{{base_url}}\"><img src=\"{{ theme_url }}/images/{{site.logo}}\" alt=\"{{ site.author.title}}\" /></a>
         {% endif %}
         <a class=\"menu-button icon-menu\" href=\"#\"><span class=\"word\">{{ 'THEME_MASONRY.MENU_TITLE'|t }}</span></a>
     </nav>
-</header>
-", "partials/header.html.twig", "C:\\Users\\Coco_\\Documents\\GitHub\\blog-phil\\user\\themes\\masonry\\templates\\partials\\header.html.twig");
+</header> 
+
+{{ dump(header.image|first.name) }}
+   ", "partials/header.html.twig", "C:\\Users\\Coco_\\Documents\\GitHub\\blog-phil\\user\\themes\\masonry\\templates\\partials\\header.html.twig");
     }
 }

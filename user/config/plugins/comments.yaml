@@ -1,19 +1,9 @@
-enabled: ture
+enabled: false
 enable_on_routes:
   - /blog
 disable_on_routes:
   - /blog/blog-post-to-ignore
   - /ignore-this-route
-
-active: true                # Option to (de-)activate this plugin on a per-page basis
-provider: 'Disqus'                # Comment provider (one of the providers below)
-
-providers:
-  disqus:
-    shortname: 'Phil's Blog           # Forum shortname
-    show_count: true       # Show comment count
-    language: 'de'  
-
 form:
   name: comments
   fields:
@@ -56,6 +46,16 @@ form:
       name: path
       type: hidden
       evaluateDefault: grav.uri.path
+    -
+      name: g-recaptcha-response
+      label: Captcha
+      type: captcha
+      recaptcha_site_key: 6LdLBocUAAAAAKEaFm4INtTT_N2tYssyBHU6laFb
+      recaptcha_not_validated: 'Captcha not valid!'
+      validate:
+        required: true
+      process:
+        ignore: true
   buttons:
     -
       type: submit
@@ -71,3 +71,10 @@ form:
       message: PLUGIN_COMMENTS.THANK_YOU_MESSAGE
     -
       reset: true
+active: true
+provider: Disqus
+providers:
+  disqus:
+    shortname: 'Phil\''s Blog'
+    show_count: true
+    language: de

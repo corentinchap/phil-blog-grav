@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/user/config/plugins/comments.yaml',
-    'modified' => 1545716099,
+    'modified' => 1546673620,
     'data' => [
         'enabled' => false,
         'enable_on_routes' => [
@@ -64,6 +64,19 @@ return [
                     'name' => 'path',
                     'type' => 'hidden',
                     'evaluateDefault' => 'grav.uri.path'
+                ],
+                7 => [
+                    'name' => 'g-recaptcha-response',
+                    'label' => 'Captcha',
+                    'type' => 'captcha',
+                    'recaptcha_site_key' => '6LdLBocUAAAAAKEaFm4INtTT_N2tYssyBHU6laFb',
+                    'recaptcha_not_validated' => 'Captcha not valid!',
+                    'validate' => [
+                        'required' => true
+                    ],
+                    'process' => [
+                        'ignore' => true
+                    ]
                 ]
             ],
             'buttons' => [
@@ -88,6 +101,15 @@ return [
                 3 => [
                     'reset' => true
                 ]
+            ]
+        ],
+        'active' => true,
+        'provider' => 'Disqus',
+        'providers' => [
+            'disqus' => [
+                'shortname' => 'Phil\\\'s Blog',
+                'show_count' => true,
+                'language' => 'de'
             ]
         ]
     ]

@@ -16,7 +16,7 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        $this->loadTemplate("post.html.twig", "post.html.twig", 1, "1337521569")->display($context);
+        $this->loadTemplate("post.html.twig", "post.html.twig", 1, "1569752115")->display($context);
     }
 
     public function getTemplateName()
@@ -65,59 +65,12 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
         <section class=\"post-content\">
             {{content}}
             {% if config.plugins.jscomments.enabled %}
+                
                 {{ jscomments()|raw }}
+                
             {% endif %}
         </section>
 
-        <footer class=\"post-footer\">
-            {%if site.author %}
-                {%if site.author.image %}
-                    <figure class=\"author-image\">
-                        <a class=\"img\" href=\"{{base_url}}\" style=\"background-image: url({{ theme_url }}/images/{{ site.author.image }})\">
-                            <span class=\"hidden\">{{site.author.name}}'s Picture</span>
-                        </a>
-                    </figure>
-                {% endif %}
-        <section class=\"author\">
-           {%if page.taxonomy.author %}
-              {% for author in page.taxonomy.author %}
-                 <h4><a href=\"{{base_url}}/author:{{ author }}\">{{ author }}</a></h4>
-                 <p><a href=\"{{base_url}}/author:{{ author }}\">{{ 'THEME_MASONRY.BLOG.POST.MORE.SPEC_AUTHOR'|t }} {{ author }}.</a></p>
-              {% endfor %}
-           {% else %}
-              <h4><a href=\"{{base_url}}\">{{site.author.name}}</a></h4>
-              {%if site.author.bio %}
-                 <p>{{site.author.bio}}</p>
-              {% else %}
-                 <p><a href=\"{{base_url}}\">{{ 'THEME_MASONRY.BLOG.POST.MORE.AUTHOR'|t }}</a></p>
-              {% endif %}
-           {% endif %}
-           <div class=\"author-meta\">
-           {% if site.author.location %}<span class=\"author-location icon-location\">{{site.author.location}}</span>{% endif %}
-           {% if site.author.website %}<span class=\"author-link icon-link\"><a href=\"{{site.author.website}}\">{{site.author.website}}</a></span>{% endif %}
-           </div>
-        </section>
-            {% endif %}
-
-            <section class=\"share\">
-                <h4>{{ 'THEME_MASONRY.BLOG.POST.SHARE'|t }}</h4>
-                <a class=\"icon-twitter\" href=\"https://twitter.com/share?text={{page.title | escape}}&amp;url={{page.url(true)}}\"
-                    onclick=\"window.open(this.href, 'twitter-share', 'width=550,height=235');return false;\">
-                    <span class=\"hidden\">Twitter</span>
-                </a>
-                <a class=\"icon-facebook\" href=\"https://www.facebook.com/sharer/sharer.php?u={{page.url(true)}}\"
-                    onclick=\"window.open(this.href, 'facebook-share','width=580,height=296');return false;\">
-                    <span class=\"hidden\">Facebook</span>
-                </a>
-                <a class=\"icon-google-plus\" href=\"https://plus.google.com/share?url={{page.url(true)}}\"
-                   onclick=\"window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;\">
-                    <span class=\"hidden\">Google+</span>
-                </a>
-            </section>
-           {% if config.plugins.comments.enabled %}
-              {% include 'partials/comments.html.twig' with {'page': page} %}
-           {% endif %}
-        </footer>
 
     </article>
 </main>
@@ -166,7 +119,7 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
 
 
 /* post.html.twig */
-class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe5955d_1337521569 extends Twig_Template
+class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe5955d_1569752115 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -287,175 +240,26 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
         // line 26
         if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "plugins", array()), "jscomments", array()), "enabled", array())) {
             // line 27
-            echo "                ";
+            echo "                
+                ";
+            // line 28
             echo $this->env->getExtension('Grav\Plugin\JSComments\Twig\JSCommentsTwigExtension')->funcJSComments();
             echo "
+                
             ";
         }
-        // line 29
+        // line 31
         echo "        </section>
 
-        <footer class=\"post-footer\">
-            ";
-        // line 32
-        if ($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array())) {
-            // line 33
-            echo "                ";
-            if ($this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "image", array())) {
-                // line 34
-                echo "                    <figure class=\"author-image\">
-                        <a class=\"img\" href=\"";
-                // line 35
-                echo (isset($context["base_url"]) ? $context["base_url"] : null);
-                echo "\" style=\"background-image: url(";
-                echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
-                echo "/images/";
-                echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "image", array());
-                echo ")\">
-                            <span class=\"hidden\">";
-                // line 36
-                echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "name", array());
-                echo "'s Picture</span>
-                        </a>
-                    </figure>
-                ";
-            }
-            // line 40
-            echo "        <section class=\"author\">
-           ";
-            // line 41
-            if ($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "taxonomy", array()), "author", array())) {
-                // line 42
-                echo "              ";
-                $context['_parent'] = $context;
-                $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "taxonomy", array()), "author", array()));
-                foreach ($context['_seq'] as $context["_key"] => $context["author"]) {
-                    // line 43
-                    echo "                 <h4><a href=\"";
-                    echo (isset($context["base_url"]) ? $context["base_url"] : null);
-                    echo "/author:";
-                    echo $context["author"];
-                    echo "\">";
-                    echo $context["author"];
-                    echo "</a></h4>
-                 <p><a href=\"";
-                    // line 44
-                    echo (isset($context["base_url"]) ? $context["base_url"] : null);
-                    echo "/author:";
-                    echo $context["author"];
-                    echo "\">";
-                    echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->translate("THEME_MASONRY.BLOG.POST.MORE.SPEC_AUTHOR");
-                    echo " ";
-                    echo $context["author"];
-                    echo ".</a></p>
-              ";
-                }
-                $_parent = $context['_parent'];
-                unset($context['_seq'], $context['_iterated'], $context['_key'], $context['author'], $context['_parent'], $context['loop']);
-                $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 46
-                echo "           ";
-            } else {
-                // line 47
-                echo "              <h4><a href=\"";
-                echo (isset($context["base_url"]) ? $context["base_url"] : null);
-                echo "\">";
-                echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "name", array());
-                echo "</a></h4>
-              ";
-                // line 48
-                if ($this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "bio", array())) {
-                    // line 49
-                    echo "                 <p>";
-                    echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "bio", array());
-                    echo "</p>
-              ";
-                } else {
-                    // line 51
-                    echo "                 <p><a href=\"";
-                    echo (isset($context["base_url"]) ? $context["base_url"] : null);
-                    echo "\">";
-                    echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->translate("THEME_MASONRY.BLOG.POST.MORE.AUTHOR");
-                    echo "</a></p>
-              ";
-                }
-                // line 53
-                echo "           ";
-            }
-            // line 54
-            echo "           <div class=\"author-meta\">
-           ";
-            // line 55
-            if ($this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "location", array())) {
-                echo "<span class=\"author-location icon-location\">";
-                echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "location", array());
-                echo "</span>";
-            }
-            // line 56
-            echo "           ";
-            if ($this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "website", array())) {
-                echo "<span class=\"author-link icon-link\"><a href=\"";
-                echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "website", array());
-                echo "\">";
-                echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "website", array());
-                echo "</a></span>";
-            }
-            // line 57
-            echo "           </div>
-        </section>
-            ";
-        }
-        // line 60
-        echo "
-            <section class=\"share\">
-                <h4>";
-        // line 62
-        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->translate("THEME_MASONRY.BLOG.POST.SHARE");
-        echo "</h4>
-                <a class=\"icon-twitter\" href=\"https://twitter.com/share?text=";
-        // line 63
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "title", array()));
-        echo "&amp;url=";
-        echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "url", array(0 => true), "method");
-        echo "\"
-                    onclick=\"window.open(this.href, 'twitter-share', 'width=550,height=235');return false;\">
-                    <span class=\"hidden\">Twitter</span>
-                </a>
-                <a class=\"icon-facebook\" href=\"https://www.facebook.com/sharer/sharer.php?u=";
-        // line 67
-        echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "url", array(0 => true), "method");
-        echo "\"
-                    onclick=\"window.open(this.href, 'facebook-share','width=580,height=296');return false;\">
-                    <span class=\"hidden\">Facebook</span>
-                </a>
-                <a class=\"icon-google-plus\" href=\"https://plus.google.com/share?url=";
-        // line 71
-        echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "url", array(0 => true), "method");
-        echo "\"
-                   onclick=\"window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;\">
-                    <span class=\"hidden\">Google+</span>
-                </a>
-            </section>
-           ";
-        // line 76
-        if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "plugins", array()), "comments", array()), "enabled", array())) {
-            // line 77
-            echo "              ";
-            $this->loadTemplate("partials/comments.html.twig", "post.html.twig", 77)->display(array_merge($context, array("page" => (isset($context["page"]) ? $context["page"] : null))));
-            // line 78
-            echo "           ";
-        }
-        // line 79
-        echo "        </footer>
 
     </article>
 </main>
 
 <aside class=\"read-next\">
     ";
-        // line 85
+        // line 38
         if ( !$this->getAttribute((isset($context["page"]) ? $context["page"] : null), "isFirst", array())) {
-            // line 86
+            // line 39
             echo "    <a class=\"read-next-story ";
             if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "header", array()), "image", array())) {
                 echo "\" style=\"background-image: url(";
@@ -469,21 +273,21 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
             echo "\">
         <section class=\"post\">
             <h2>";
-            // line 88
+            // line 41
             echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "title", array());
             echo "</h2>
             <p>";
-            // line 89
+            // line 42
             echo \Grav\Common\Utils::truncate(strip_tags($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "content", array())), 140);
             echo "&hellip;</p>
         </section>
     </a>
     ";
         }
-        // line 93
+        // line 46
         echo "    ";
         if ( !$this->getAttribute((isset($context["page"]) ? $context["page"] : null), "isLast", array())) {
-            // line 94
+            // line 47
             echo "    <a class=\"read-next-story prev ";
             if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "header", array()), "image", array())) {
                 echo "\" style=\"background-image: url(";
@@ -497,38 +301,38 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
             echo "\">
         <section class=\"post\">
             <h2>";
-            // line 96
+            // line 49
             echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "title", array());
             echo "</h2>
             <p>";
-            // line 97
+            // line 50
             echo \Grav\Common\Utils::truncate(strip_tags($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "content", array())), 140);
             echo "&hellip;</p>
         </section>
     </a>
     ";
         }
-        // line 101
+        // line 54
         echo "</aside>
 
 
 ";
     }
 
-    // line 106
+    // line 59
     public function block_bottom($context, array $blocks = array())
     {
-        // line 107
+        // line 60
         echo "
     ";
-        // line 108
+        // line 61
         if ($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "disqus", array())) {
-            // line 109
+            // line 62
             echo "        <script>
         (function() {
         var d = document, s = d.createElement('script');
         s.src = '//";
-            // line 112
+            // line 65
             echo $this->getAttribute((isset($context["site"]) ? $context["site"] : null), "disqus", array());
             echo ".disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
@@ -537,7 +341,7 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
         </script>
     ";
         }
-        // line 118
+        // line 71
         echo "
 ";
     }
@@ -554,7 +358,7 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
 
     public function getDebugInfo()
     {
-        return array (  541 => 118,  532 => 112,  527 => 109,  525 => 108,  522 => 107,  519 => 106,  512 => 101,  505 => 97,  501 => 96,  487 => 94,  484 => 93,  477 => 89,  473 => 88,  459 => 86,  457 => 85,  449 => 79,  446 => 78,  443 => 77,  441 => 76,  433 => 71,  426 => 67,  417 => 63,  413 => 62,  409 => 60,  404 => 57,  395 => 56,  389 => 55,  386 => 54,  383 => 53,  375 => 51,  369 => 49,  367 => 48,  360 => 47,  357 => 46,  343 => 44,  334 => 43,  329 => 42,  327 => 41,  324 => 40,  317 => 36,  309 => 35,  306 => 34,  303 => 33,  301 => 32,  296 => 29,  290 => 27,  288 => 26,  284 => 25,  278 => 21,  275 => 20,  232 => 19,  230 => 18,  224 => 17,  218 => 15,  216 => 14,  210 => 10,  208 => 9,  205 => 8,  202 => 7,  197 => 4,  194 => 3,  19 => 1,);
+        return array (  345 => 71,  336 => 65,  331 => 62,  329 => 61,  326 => 60,  323 => 59,  316 => 54,  309 => 50,  305 => 49,  291 => 47,  288 => 46,  281 => 42,  277 => 41,  263 => 39,  261 => 38,  252 => 31,  246 => 28,  243 => 27,  241 => 26,  237 => 25,  231 => 21,  228 => 20,  185 => 19,  183 => 18,  177 => 17,  171 => 15,  169 => 14,  163 => 10,  161 => 9,  158 => 8,  155 => 7,  150 => 4,  147 => 3,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -593,59 +397,12 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
         <section class=\"post-content\">
             {{content}}
             {% if config.plugins.jscomments.enabled %}
+                
                 {{ jscomments()|raw }}
+                
             {% endif %}
         </section>
 
-        <footer class=\"post-footer\">
-            {%if site.author %}
-                {%if site.author.image %}
-                    <figure class=\"author-image\">
-                        <a class=\"img\" href=\"{{base_url}}\" style=\"background-image: url({{ theme_url }}/images/{{ site.author.image }})\">
-                            <span class=\"hidden\">{{site.author.name}}'s Picture</span>
-                        </a>
-                    </figure>
-                {% endif %}
-        <section class=\"author\">
-           {%if page.taxonomy.author %}
-              {% for author in page.taxonomy.author %}
-                 <h4><a href=\"{{base_url}}/author:{{ author }}\">{{ author }}</a></h4>
-                 <p><a href=\"{{base_url}}/author:{{ author }}\">{{ 'THEME_MASONRY.BLOG.POST.MORE.SPEC_AUTHOR'|t }} {{ author }}.</a></p>
-              {% endfor %}
-           {% else %}
-              <h4><a href=\"{{base_url}}\">{{site.author.name}}</a></h4>
-              {%if site.author.bio %}
-                 <p>{{site.author.bio}}</p>
-              {% else %}
-                 <p><a href=\"{{base_url}}\">{{ 'THEME_MASONRY.BLOG.POST.MORE.AUTHOR'|t }}</a></p>
-              {% endif %}
-           {% endif %}
-           <div class=\"author-meta\">
-           {% if site.author.location %}<span class=\"author-location icon-location\">{{site.author.location}}</span>{% endif %}
-           {% if site.author.website %}<span class=\"author-link icon-link\"><a href=\"{{site.author.website}}\">{{site.author.website}}</a></span>{% endif %}
-           </div>
-        </section>
-            {% endif %}
-
-            <section class=\"share\">
-                <h4>{{ 'THEME_MASONRY.BLOG.POST.SHARE'|t }}</h4>
-                <a class=\"icon-twitter\" href=\"https://twitter.com/share?text={{page.title | escape}}&amp;url={{page.url(true)}}\"
-                    onclick=\"window.open(this.href, 'twitter-share', 'width=550,height=235');return false;\">
-                    <span class=\"hidden\">Twitter</span>
-                </a>
-                <a class=\"icon-facebook\" href=\"https://www.facebook.com/sharer/sharer.php?u={{page.url(true)}}\"
-                    onclick=\"window.open(this.href, 'facebook-share','width=580,height=296');return false;\">
-                    <span class=\"hidden\">Facebook</span>
-                </a>
-                <a class=\"icon-google-plus\" href=\"https://plus.google.com/share?url={{page.url(true)}}\"
-                   onclick=\"window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;\">
-                    <span class=\"hidden\">Google+</span>
-                </a>
-            </section>
-           {% if config.plugins.comments.enabled %}
-              {% include 'partials/comments.html.twig' with {'page': page} %}
-           {% endif %}
-        </footer>
 
     </article>
 </main>

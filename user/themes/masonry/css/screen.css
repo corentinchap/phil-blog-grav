@@ -4,7 +4,12 @@
     position: relative;
     top: 22px;
     }
-.subscribe-button{padding:0;}
+.subscribe-button{
+    padding:0;
+    box-shadow: -1px 3px 6px 2px #ffffff29;
+    transition: ease 1s;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
 .link-subscribe{
     color: #000!important;
     font-size: 14px;
@@ -12,4 +17,9 @@
     position: absolute;
     left: 0;
     text-decoration: none;
+    }
+
+    .subscribe-button:hover {
+        box-shadow: none;
+        background: #fff;
     }

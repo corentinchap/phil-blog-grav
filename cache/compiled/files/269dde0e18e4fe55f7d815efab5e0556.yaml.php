@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'plugins://jscomments/jscomments.yaml',
-    'modified' => 1545559718,
+    'modified' => 1546669920,
     'data' => [
         'enabled' => true,
         'active' => true,
@@ -12,7 +12,7 @@ return [
                 'host' => ''
             ],
             'disqus' => [
-                'shortname' => '',
+                'shortname' => 'Phil Reiss blog',
                 'show_count' => false,
                 'language' => ''
             ],

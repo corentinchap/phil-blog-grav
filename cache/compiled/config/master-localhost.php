@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1545716101,
-    'checksum' => '06b184f75fc4e44b1df56761cd57d9d6',
+    'timestamp' => 1546676837,
+    'checksum' => '968668f20ded619b976d35c1d236f4f1',
     'files' => [
         'user/config' => [
             'media' => [
@@ -11,7 +11,11 @@ return [
             ],
             'plugins/comments' => [
                 'file' => 'user/config/plugins/comments.yaml',
-                'modified' => 1545716099
+                'modified' => 1546673620
+            ],
+            'plugins/jscomments' => [
+                'file' => 'user/config/plugins/jscomments.yaml',
+                'modified' => 1546674122
             ],
             'plugins/pagination' => [
                 'file' => 'user/config/plugins/pagination.yaml',
@@ -31,7 +35,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1545550711
+                'modified' => 1546676835
             ]
         ],
         'system/config' => [
@@ -79,7 +83,7 @@ return [
             ],
             'plugins/jscomments' => [
                 'file' => 'user/plugins/jscomments/jscomments.yaml',
-                'modified' => 1545559718
+                'modified' => 1546669920
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
@@ -221,6 +225,19 @@ return [
                             'name' => 'path',
                             'type' => 'hidden',
                             'evaluateDefault' => 'grav.uri.path'
+                        ],
+                        7 => [
+                            'name' => 'g-recaptcha-response',
+                            'label' => 'Captcha',
+                            'type' => 'captcha',
+                            'recaptcha_site_key' => '6LdLBocUAAAAAKEaFm4INtTT_N2tYssyBHU6laFb',
+                            'recaptcha_not_validated' => 'Captcha not valid!',
+                            'validate' => [
+                                'required' => true
+                            ],
+                            'process' => [
+                                'ignore' => true
+                            ]
                         ]
                     ],
                     'buttons' => [
@@ -245,6 +262,15 @@ return [
                         3 => [
                             'reset' => true
                         ]
+                    ]
+                ],
+                'active' => true,
+                'provider' => 'Disqus',
+                'providers' => [
+                    'disqus' => [
+                        'shortname' => 'Phil\\\'s Blog',
+                        'show_count' => true,
+                        'language' => 'de'
                     ]
                 ]
             ],
@@ -298,15 +324,15 @@ return [
             'jscomments' => [
                 'enabled' => true,
                 'active' => true,
-                'provider' => '',
+                'provider' => 'disqus',
                 'providers' => [
                     'discourse' => [
                         'host' => ''
                     ],
                     'disqus' => [
-                        'shortname' => '',
+                        'shortname' => 'philreissblog',
                         'show_count' => false,
-                        'language' => ''
+                        'language' => 'de'
                     ],
                     'facebook' => [
                         'app_id' => '',

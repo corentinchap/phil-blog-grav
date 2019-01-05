@@ -30,7 +30,9 @@
             {% do assets.add('theme://css/screen.css',101) %}
             {{ assets.css() }}
         {% endblock %}
-
+        
+        {% do assets.addJs('system://assets/jquery/jquery-2.x.min.js', {'priority':1, 'group':'top'}) %}
+        {{ assets.js('top') }}
         {% endblock head %}
     </head>
 
@@ -52,8 +54,7 @@
 
         {# Footer JS #}
         {% block javascripts %}
-            {% do assets.add('jquery', 101) %}
-
+    
             {# Main JS #}
             {% do assets.add('theme://js/index.js') %}
 
@@ -66,9 +67,9 @@
                 {% do assets.add('https://oss.maxcdn.com/respond/1.4.2/respond.min.js') %}
             {% endif %}
 
-            {{ assets.js() }}
+           
         {% endblock %}
-
+        {{ assets.js() }}
     </body>
     {% block bottom %}{% endblock %}
 </html>

@@ -74,7 +74,7 @@ providers:
     host: ''                # The URL to the Discourse commenting system
 
   disqus:
-    shortname: ''           # Forum shortname
+    shortname: 'Phil's blog'           # Forum shortname
     show_count: false       # Show comment count
     language: ''            # Default language (e.g. 'en')
 

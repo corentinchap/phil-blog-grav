@@ -26,7 +26,7 @@ class __TwigTemplate_d99333488565b9f85b77e7f2aa6d80546bb3e271d34fdbf29ec236ea331
             // line 4
             echo $this->getAttribute((isset($context["post"]) ? $context["post"] : null), "url", array());
             echo "\" class=\"js-ajax-link\"><img src=\"";
-            echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : null), "media", array()), $this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : null), "header", array()), "image", array()), array(), "array"), "cropResize", array(0 => 350, 1 => 350), "method"), "url", array());
+            echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : null), "media", array()), $this->getAttribute(twig_first($this->env, $this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : null), "header", array()), "image", array())), "name", array()), array(), "array"), "cropResize", array(0 => 350, 1 => 350), "method"), "url", array());
             echo "\" width=\"100%\" height=\"100%\" alt=\"\"></a>
         </figure>
     ";
@@ -139,7 +139,7 @@ class __TwigTemplate_d99333488565b9f85b77e7f2aa6d80546bb3e271d34fdbf29ec236ea331
         return new Twig_Source("<article class=\"post\" itemscope itemtype=\"http://schema.org/BlogPosting\" role=\"article\">
     {% if post.header.image %}
         <figure class=\"post-image\" itemprop=\"image\">
-            <a href=\"{{ post.url }}\" class=\"js-ajax-link\"><img src=\"{{ post.media[post.header.image].cropResize(350, 350).url }}\" width=\"100%\" height=\"100%\" alt=\"\"></a>
+            <a href=\"{{ post.url }}\" class=\"js-ajax-link\"><img src=\"{{ post.media[post.header.image|first.name].cropResize(350, 350).url }}\" width=\"100%\" height=\"100%\" alt=\"\"></a>
         </figure>
     {% endif %}
     <header class=\"post-header\">

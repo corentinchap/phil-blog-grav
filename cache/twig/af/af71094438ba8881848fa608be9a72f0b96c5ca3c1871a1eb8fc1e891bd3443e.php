@@ -65,15 +65,6 @@ class __TwigTemplate_9072fadfa15d847c1591b7734e72452a55084731c162716532484917fcd
     </div>
 </div>
 <span class=\"nav-cover\"></span>
-<style>.insta-icon{    width: 22%;
-    position: relative;
-    top: 22px;}.subscribe-button{padding:0;}.link-subscribe{color: #000;
-    font-size: 14px;
-    bottom: 1px;
-    position: absolute;
-    left: 0;
-    text-decoration: none;}
-    </style>
 ";
     }
 
@@ -121,15 +112,6 @@ class __TwigTemplate_9072fadfa15d847c1591b7734e72452a55084731c162716532484917fcd
     </div>
 </div>
 <span class=\"nav-cover\"></span>
-<style>.insta-icon{    width: 22%;
-    position: relative;
-    top: 22px;}.subscribe-button{padding:0;}.link-subscribe{color: #000;
-    font-size: 14px;
-    bottom: 1px;
-    position: absolute;
-    left: 0;
-    text-decoration: none;}
-    </style>
 ", "partials/navigation.html.twig", "C:\\Users\\Coco_\\Documents\\GitHub\\blog-phil\\user\\themes\\masonry\\templates\\partials\\navigation.html.twig");
     }
 }

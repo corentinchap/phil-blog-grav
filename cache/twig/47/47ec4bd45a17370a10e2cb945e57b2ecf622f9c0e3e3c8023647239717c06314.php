@@ -16,7 +16,7 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        $this->loadTemplate("post.html.twig", "post.html.twig", 1, "41005687")->display($context);
+        $this->loadTemplate("post.html.twig", "post.html.twig", 1, "1038157960")->display($context);
     }
 
     public function getTemplateName()
@@ -78,15 +78,16 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
 {% if page.nextSibling.header.image %}
    <aside class=\"read-next\">
     {% if not page.isFirst %}
-    <a class=\"read-next-story {% if page.nextSibling.header.image %}\" style=\"background-image: url({{ page.nextSibling.media[page.nextSibling.header.image].url }}){% else %}no-cover{% endif %}\" href=\"{{page.nextSibling.url}}\">
+    <a class=\"read-next-story {% if page.nextSibling.header.image %}\" style=\"background-image: url(/{{page.nextSibling.header.image|first.path}}){% else %}no-cover{% endif %}\" href=\"{{page.nextSibling.url}}\">
         <section class=\"post\">
             <h2>{{page.nextSibling.title}}</h2>
             <p>{{ page.nextSibling.content | striptags | truncate(140) }}&hellip;</p>
         </section>
     </a>
+    {{dump(page.nextSibling.header.image|first.path)}}
     {% endif %}
     {% if not page.isLast %}
-    <a class=\"read-next-story prev {% if page.prevSibling.header.image %}\" style=\"background-image: url({{ page.prevSibling.media[page.prevSibling.header.image].url }}){% else %}no-cover{% endif %}\" href=\"{{page.prevSibling.url}}\">
+    <a class=\"read-next-story prev {% if page.prevSibling.header.image %}\" style=\"background-image: url(/{{ page.prevSibling.header.image|first.path }}){% else %}no-cover{% endif %}\" href=\"{{page.prevSibling.url}}\">
         <section class=\"post\">
             <h2>{{page.prevSibling.title}}</h2>
             <p>{{ page.prevSibling.content | striptags | truncate(140) }}&hellip;</p>
@@ -122,7 +123,7 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
 
 
 /* post.html.twig */
-class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe5955d_41005687 extends Twig_Template
+class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe5955d_1038157960 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -272,8 +273,8 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
                 // line 40
                 echo "    <a class=\"read-next-story ";
                 if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "header", array()), "image", array())) {
-                    echo "\" style=\"background-image: url(";
-                    echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "media", array()), $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "header", array()), "image", array()), array(), "array"), "url", array());
+                    echo "\" style=\"background-image: url(/";
+                    echo $this->getAttribute(twig_first($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "header", array()), "image", array())), "path", array());
                     echo ")";
                 } else {
                     echo "no-cover";
@@ -293,15 +294,19 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
         </section>
     </a>
     ";
+                // line 46
+                echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->dump($this->env, $context, $this->getAttribute(twig_first($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "header", array()), "image", array())), "path", array()));
+                echo "
+    ";
             }
-            // line 47
+            // line 48
             echo "    ";
             if ( !$this->getAttribute((isset($context["page"]) ? $context["page"] : null), "isLast", array())) {
-                // line 48
+                // line 49
                 echo "    <a class=\"read-next-story prev ";
                 if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "header", array()), "image", array())) {
-                    echo "\" style=\"background-image: url(";
-                    echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "media", array()), $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "header", array()), "image", array()), array(), "array"), "url", array());
+                    echo "\" style=\"background-image: url(/";
+                    echo $this->getAttribute(twig_first($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "header", array()), "image", array())), "path", array());
                     echo ")";
                 } else {
                     echo "no-cover";
@@ -311,42 +316,42 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
                 echo "\">
         <section class=\"post\">
             <h2>";
-                // line 50
+                // line 51
                 echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "title", array());
                 echo "</h2>
             <p>";
-                // line 51
+                // line 52
                 echo \Grav\Common\Utils::truncate(strip_tags($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "content", array())), 140);
                 echo "&hellip;</p>
         </section>
     </a>
     ";
             }
-            // line 55
+            // line 56
             echo "</aside> 
 ";
         }
-        // line 57
+        // line 58
         echo "
 
 
 ";
     }
 
-    // line 62
+    // line 63
     public function block_bottom($context, array $blocks = array())
     {
-        // line 63
+        // line 64
         echo "
     ";
-        // line 64
+        // line 65
         if ($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "disqus", array())) {
-            // line 65
+            // line 66
             echo "        <script>
         (function() {
         var d = document, s = d.createElement('script');
         s.src = '//";
-            // line 68
+            // line 69
             echo $this->getAttribute((isset($context["site"]) ? $context["site"] : null), "disqus", array());
             echo ".disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
@@ -355,7 +360,7 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
         </script>
     ";
         }
-        // line 74
+        // line 75
         echo "
 ";
     }
@@ -372,7 +377,7 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
 
     public function getDebugInfo()
     {
-        return array (  359 => 74,  350 => 68,  345 => 65,  343 => 64,  340 => 63,  337 => 62,  330 => 57,  326 => 55,  319 => 51,  315 => 50,  301 => 48,  298 => 47,  291 => 43,  287 => 42,  273 => 40,  271 => 39,  268 => 38,  266 => 37,  262 => 36,  255 => 31,  249 => 28,  246 => 27,  244 => 26,  240 => 25,  234 => 21,  231 => 20,  188 => 19,  186 => 18,  180 => 17,  174 => 15,  172 => 14,  166 => 10,  164 => 9,  161 => 8,  158 => 7,  153 => 4,  150 => 3,  19 => 1,);
+        return array (  364 => 75,  355 => 69,  350 => 66,  348 => 65,  345 => 64,  342 => 63,  335 => 58,  331 => 56,  324 => 52,  320 => 51,  306 => 49,  303 => 48,  298 => 46,  292 => 43,  288 => 42,  274 => 40,  272 => 39,  269 => 38,  267 => 37,  263 => 36,  256 => 31,  250 => 28,  247 => 27,  245 => 26,  241 => 25,  235 => 21,  232 => 20,  189 => 19,  187 => 18,  181 => 17,  175 => 15,  173 => 14,  167 => 10,  165 => 9,  162 => 8,  159 => 7,  154 => 4,  151 => 3,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -424,15 +429,16 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
 {% if page.nextSibling.header.image %}
    <aside class=\"read-next\">
     {% if not page.isFirst %}
-    <a class=\"read-next-story {% if page.nextSibling.header.image %}\" style=\"background-image: url({{ page.nextSibling.media[page.nextSibling.header.image].url }}){% else %}no-cover{% endif %}\" href=\"{{page.nextSibling.url}}\">
+    <a class=\"read-next-story {% if page.nextSibling.header.image %}\" style=\"background-image: url(/{{page.nextSibling.header.image|first.path}}){% else %}no-cover{% endif %}\" href=\"{{page.nextSibling.url}}\">
         <section class=\"post\">
             <h2>{{page.nextSibling.title}}</h2>
             <p>{{ page.nextSibling.content | striptags | truncate(140) }}&hellip;</p>
         </section>
     </a>
+    {{dump(page.nextSibling.header.image|first.path)}}
     {% endif %}
     {% if not page.isLast %}
-    <a class=\"read-next-story prev {% if page.prevSibling.header.image %}\" style=\"background-image: url({{ page.prevSibling.media[page.prevSibling.header.image].url }}){% else %}no-cover{% endif %}\" href=\"{{page.prevSibling.url}}\">
+    <a class=\"read-next-story prev {% if page.prevSibling.header.image %}\" style=\"background-image: url(/{{ page.prevSibling.header.image|first.path }}){% else %}no-cover{% endif %}\" href=\"{{page.prevSibling.url}}\">
         <section class=\"post\">
             <h2>{{page.prevSibling.title}}</h2>
             <p>{{ page.prevSibling.content | striptags | truncate(140) }}&hellip;</p>

@@ -36,7 +36,7 @@ class __TwigTemplate_be4938a40c05ba08c078546df4457f82886768673eeb61fac78ad2cb895
         if ($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "logo", array())) {
             // line 4
             echo "            <a class=\"blog-logo\" href=\"";
-            echo (isset($context["base_url"]) ? $context["base_url"] : null);
+            echo (isset($context["home_url"]) ? $context["home_url"] : null);
             echo "\"><img src=\"";
             echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
             echo "/images/";
@@ -83,7 +83,7 @@ class __TwigTemplate_be4938a40c05ba08c078546df4457f82886768673eeb61fac78ad2cb895
         return new Twig_Source("<header class=\"main-header post-head {% if header.image %}\" style=\"background-image: url({{ page.media[header.image|first.name].url }}){% else %}no-cover{% endif %}\">
     <nav class=\"main-nav {% if header.image %}overlay{% endif %} clearfix\">
         {% if site.logo %}
-            <a class=\"blog-logo\" href=\"{{base_url}}\"><img src=\"{{ theme_url }}/images/{{site.logo}}\" alt=\"{{ site.author.title}}\" /></a>
+            <a class=\"blog-logo\" href=\"{{home_url}}\"><img src=\"{{ theme_url }}/images/{{site.logo}}\" alt=\"{{ site.author.title}}\" /></a>
         {% endif %}
         <a class=\"menu-button icon-menu\" href=\"#\"><span class=\"word\">{{ 'THEME_MASONRY.MENU_TITLE'|t }}</span></a>
     </nav>

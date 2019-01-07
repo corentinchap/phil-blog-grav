@@ -37,16 +37,16 @@
 {% if page.nextSibling.header.image %}
    <aside class="read-next">
     {% if not page.isFirst %}
-    <a class="read-next-story {% if page.nextSibling.header.image %}" style="background-image: url({{  }}){% else %}no-cover{% endif %}" href="{{page.nextSibling.url}}">
+    <a class="read-next-story {% if page.nextSibling.header.image %}" style="background-image: url(/{{page.nextSibling.header.image|first.path}}){% else %}no-cover{% endif %}" href="{{page.nextSibling.url}}">
         <section class="post">
             <h2>{{page.nextSibling.title}}</h2>
             <p>{{ page.nextSibling.content | striptags | truncate(140) }}&hellip;</p>
         </section>
     </a>
-    {{dump(page.nextSibling.media[page.nextSibling.header.image].url)}}
+    {{dump(page.nextSibling.header.image|first.path)}}
     {% endif %}
     {% if not page.isLast %}
-    <a class="read-next-story prev {% if page.prevSibling.header.image %}" style="background-image: url({{ page.prevSibling.media[page.prevSibling.header.image].url }}){% else %}no-cover{% endif %}" href="{{page.prevSibling.url}}">
+    <a class="read-next-story prev {% if page.prevSibling.header.image %}" style="background-image: url(/{{ page.prevSibling.header.image|first.path }}){% else %}no-cover{% endif %}" href="{{page.prevSibling.url}}">
         <section class="post">
             <h2>{{page.prevSibling.title}}</h2>
             <p>{{ page.prevSibling.content | striptags | truncate(140) }}&hellip;</p>

@@ -25,11 +25,7 @@ class __TwigTemplate_d9c20f01aabb95338087020e306c103dda736bab2b6e30712152c5a793e
             echo "  <ul class=\"archive-plus\">
 ";
         }
-        // line 7
-        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->dump($this->env, $context, (isset($context["archive_plus"]) ? $context["archive_plus"] : null));
-        echo "
-";
-        // line 9
+        // line 8
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["archive_plus"]) ? $context["archive_plus"] : null), "data", array()));
         $context['loop'] = array(
@@ -40,82 +36,82 @@ class __TwigTemplate_d9c20f01aabb95338087020e306c103dda736bab2b6e30712152c5a793e
         );
         foreach ($context['_seq'] as $context["year"] => $context["months"]) {
             if ((twig_length_filter($this->env, $context["months"]) > 0)) {
+                // line 9
+                echo "  ";
                 // line 10
                 echo "  ";
+                $context["year_index"] = $this->getAttribute($context["loop"], "index", array());
                 // line 11
                 echo "  ";
-                $context["year_index"] = $this->getAttribute($context["loop"], "index", array());
-                // line 12
-                echo "  ";
                 if ((twig_date_format_filter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "date", array()), "Y") == $context["year"])) {
-                    // line 13
+                    // line 12
                     echo "    ";
                     $context["checked"] = "checked=\"checked\" ";
-                    // line 14
+                    // line 13
                     echo "  ";
                 } else {
-                    // line 15
+                    // line 14
                     echo "    ";
                     $context["checked"] = "";
-                    // line 16
+                    // line 15
                     echo "  ";
                 }
-                // line 17
+                // line 16
                 echo "
   ";
-                // line 19
+                // line 18
                 echo "  ";
                 if ($this->getAttribute($this->getAttribute((isset($context["archive_plus"]) ? $context["archive_plus"] : null), "show", array()), "year", array())) {
-                    // line 20
+                    // line 19
                     echo "    <li>
       <input type=\"checkbox\" id=\"input-archive-";
-                    // line 21
+                    // line 20
                     echo (isset($context["year_index"]) ? $context["year_index"] : null);
                     echo "\" ";
                     echo (isset($context["checked"]) ? $context["checked"] : null);
                     echo "/>
       ";
-                    // line 22
+                    // line 21
                     if ($this->getAttribute($this->getAttribute((isset($context["archive_plus"]) ? $context["archive_plus"] : null), "show", array()), "counter", array())) {
+                        // line 22
+                        echo "        ";
                         // line 23
                         echo "        ";
-                        // line 24
-                        echo "        ";
                         $context["count"] = 0;
-                        // line 25
+                        // line 24
                         echo "        ";
                         $context['_parent'] = $context;
                         $context['_seq'] = twig_ensure_traversable($context["months"]);
                         foreach ($context['_seq'] as $context["month"] => $context["items"]) {
-                            // line 26
+                            // line 25
                             echo "          ";
                             $context["count"] = ((isset($context["count"]) ? $context["count"] : null) + twig_length_filter($this->env, $context["items"]));
-                            // line 27
+                            // line 26
                             echo "        ";
                         }
                         $_parent = $context['_parent'];
                         unset($context['_seq'], $context['_iterated'], $context['month'], $context['items'], $context['_parent'], $context['loop']);
                         $context = array_intersect_key($context, $_parent) + $_parent;
-                        // line 28
+                        // line 27
                         echo "
         <label for=\"input-archive-";
-                        // line 29
+                        // line 28
                         echo (isset($context["year_index"]) ? $context["year_index"] : null);
                         echo "\" class=\"label counter\">";
                         echo (isset($context["count"]) ? $context["count"] : null);
                         echo "</label>
       ";
                     } else {
-                        // line 31
+                        // line 30
                         echo "        <label for=\"input-archive-";
                         echo (isset($context["year_index"]) ? $context["year_index"] : null);
                         echo "\"></label>
       ";
                     }
-                    // line 33
+                    // line 32
                     echo "
       <a href=\"";
-                    // line 34
+                    // line 33
                     echo (isset($context["base_url"]) ? $context["base_url"] : null);
                     echo "/";
                     echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->translate("PLUGINS.ARCHIVE_PLUS.NAME");
@@ -123,29 +119,29 @@ class __TwigTemplate_d9c20f01aabb95338087020e306c103dda736bab2b6e30712152c5a793e
                     echo twig_escape_filter($this->env, $context["year"], "url");
                     echo "\">
         <span class=\"archive_year\">";
-                    // line 35
+                    // line 34
                     echo $context["year"];
                     echo "</span>
       </a>
 
       ";
-                    // line 38
+                    // line 37
                     if ($this->getAttribute($this->getAttribute((isset($context["archive_plus"]) ? $context["archive_plus"] : null), "show", array()), "month", array())) {
-                        // line 39
+                        // line 38
                         echo "        <ul>
       ";
                     } else {
-                        // line 41
+                        // line 40
                         echo "        <ul class=\"last\">
       ";
                     }
-                    // line 43
+                    // line 42
                     echo "  ";
                 }
-                // line 44
+                // line 43
                 echo "
   ";
-                // line 45
+                // line 44
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable($context["months"]);
                 $context['loop'] = array(
@@ -156,35 +152,35 @@ class __TwigTemplate_d9c20f01aabb95338087020e306c103dda736bab2b6e30712152c5a793e
                 );
                 foreach ($context['_seq'] as $context["month"] => $context["items"]) {
                     if ((twig_length_filter($this->env, $context["items"]) > 0)) {
+                        // line 45
+                        echo "    ";
                         // line 46
                         echo "    ";
-                        // line 47
-                        echo "    ";
                         if (((twig_date_format_filter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "date", array()), "Y") == $context["year"]) && (twig_date_format_filter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "date", array()), "n") == $context["month"]))) {
-                            // line 48
+                            // line 47
                             echo "      ";
                             $context["checked"] = "checked=\"checked\" ";
-                            // line 49
+                            // line 48
                             echo "    ";
                         } else {
-                            // line 50
+                            // line 49
                             echo "      ";
                             $context["checked"] = "";
-                            // line 51
+                            // line 50
                             echo "    ";
                         }
-                        // line 52
+                        // line 51
                         echo "
     ";
-                        // line 54
+                        // line 53
                         echo "    ";
                         if ($this->getAttribute($this->getAttribute((isset($context["archive_plus"]) ? $context["archive_plus"] : null), "show", array()), "month", array())) {
-                            // line 55
+                            // line 54
                             echo "      <li>
         ";
-                            // line 56
+                            // line 55
                             if ($this->getAttribute($this->getAttribute((isset($context["archive_plus"]) ? $context["archive_plus"] : null), "show", array()), "items", array())) {
-                                // line 57
+                                // line 56
                                 echo "          <input type=\"checkbox\" id=\"input-archive-";
                                 echo (isset($context["year_index"]) ? $context["year_index"] : null);
                                 echo "-";
@@ -194,12 +190,12 @@ class __TwigTemplate_d9c20f01aabb95338087020e306c103dda736bab2b6e30712152c5a793e
                                 echo "/>
         ";
                             }
-                            // line 59
+                            // line 58
                             echo "
         ";
-                            // line 60
+                            // line 59
                             if ($this->getAttribute($this->getAttribute((isset($context["archive_plus"]) ? $context["archive_plus"] : null), "show", array()), "counter", array())) {
-                                // line 61
+                                // line 60
                                 echo "          <label for=\"input-archive-";
                                 echo (isset($context["year_index"]) ? $context["year_index"] : null);
                                 echo "-";
@@ -209,7 +205,7 @@ class __TwigTemplate_d9c20f01aabb95338087020e306c103dda736bab2b6e30712152c5a793e
                                 echo "</label>
         ";
                             } else {
-                                // line 63
+                                // line 62
                                 echo "          <label for=\"input-archive-";
                                 echo (isset($context["year_index"]) ? $context["year_index"] : null);
                                 echo "-";
@@ -217,15 +213,15 @@ class __TwigTemplate_d9c20f01aabb95338087020e306c103dda736bab2b6e30712152c5a793e
                                 echo "\"></label>
         ";
                             }
-                            // line 65
+                            // line 64
                             echo "
         ";
-                            // line 66
+                            // line 65
                             $context["month_time"] = mktime(0, 0, 0, ($context["month"] + 1), 0, $context["year"]);
-                            // line 67
+                            // line 66
                             echo "        ";
                             $context["short_month"] = $this->env->getExtension('Grav\Common\Twig\TwigExtension')->translateArray("PLUGINS.ARCHIVE_PLUS.SHORT_MONTHS", ($context["month"] - 1));
-                            // line 68
+                            // line 67
                             echo "        <a href=\"";
                             echo (isset($context["base_url"]) ? $context["base_url"] : null);
                             echo "/";
@@ -234,7 +230,7 @@ class __TwigTemplate_d9c20f01aabb95338087020e306c103dda736bab2b6e30712152c5a793e
                             echo twig_escape_filter($this->env, twig_lower_filter($this->env, (((isset($context["short_month"]) ? $context["short_month"] : null) . "_") . $context["year"])), "url");
                             echo "\">
           <span class=\"archive_month\">";
-                            // line 69
+                            // line 68
                             echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->translateArray("PLUGINS.ARCHIVE_PLUS.MONTHS", ($context["month"] - 1));
                             echo " ";
                             echo $context["year"];
@@ -244,35 +240,35 @@ class __TwigTemplate_d9c20f01aabb95338087020e306c103dda736bab2b6e30712152c5a793e
         <ul class=\"last\">
     ";
                         }
-                        // line 74
+                        // line 73
                         echo "
     ";
-                        // line 75
+                        // line 74
                         if ($this->getAttribute($this->getAttribute((isset($context["archive_plus"]) ? $context["archive_plus"] : null), "show", array()), "items", array())) {
-                            // line 76
+                            // line 75
                             echo "      ";
                             $context['_parent'] = $context;
                             $context['_seq'] = twig_ensure_traversable($context["items"]);
                             foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
+                                // line 76
+                                echo "        ";
                                 // line 77
                                 echo "        ";
+                                $context["active"] = "";
                                 // line 78
                                 echo "        ";
-                                $context["active"] = "";
-                                // line 79
-                                echo "        ";
                                 if (($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "id", array()) == $this->getAttribute($context["item"], "id", array()))) {
-                                    // line 80
+                                    // line 79
                                     echo "          ";
                                     $context["active"] = " class=\"active\"";
-                                    // line 81
+                                    // line 80
                                     echo "        ";
                                 }
-                                // line 82
+                                // line 81
                                 echo "
         <li>
           <a href=\"";
-                                // line 84
+                                // line 83
                                 echo $this->getAttribute($context["item"], "url", array());
                                 echo "\"";
                                 echo (isset($context["active"]) ? $context["active"] : null);
@@ -285,20 +281,20 @@ class __TwigTemplate_d9c20f01aabb95338087020e306c103dda736bab2b6e30712152c5a793e
                             $_parent = $context['_parent'];
                             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
                             $context = array_intersect_key($context, $_parent) + $_parent;
-                            // line 87
+                            // line 86
                             echo "    ";
                         }
-                        // line 88
+                        // line 87
                         echo "
     ";
-                        // line 90
+                        // line 89
                         echo "    ";
                         if ($this->getAttribute($this->getAttribute((isset($context["archive_plus"]) ? $context["archive_plus"] : null), "show", array()), "month", array())) {
-                            // line 91
+                            // line 90
                             echo "      </ul></li>
     ";
                         }
-                        // line 93
+                        // line 92
                         echo "  ";
                         ++$context['loop']['index0'];
                         ++$context['loop']['index'];
@@ -308,13 +304,13 @@ class __TwigTemplate_d9c20f01aabb95338087020e306c103dda736bab2b6e30712152c5a793e
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['month'], $context['items'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 94
+                // line 93
                 echo "
   ";
-                // line 96
+                // line 95
                 echo "  ";
                 if ($this->getAttribute($this->getAttribute((isset($context["archive_plus"]) ? $context["archive_plus"] : null), "show", array()), "year", array())) {
-                    // line 97
+                    // line 96
                     echo "    </ul></li>
   ";
                 }
@@ -326,13 +322,13 @@ class __TwigTemplate_d9c20f01aabb95338087020e306c103dda736bab2b6e30712152c5a793e
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['year'], $context['months'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 100
+        // line 99
         echo "</ul>
 
 ";
-        // line 102
+        // line 101
         if ($this->getAttribute((isset($context["archive_plus"]) ? $context["archive_plus"] : null), "show_more", array())) {
-            // line 103
+            // line 102
             echo "  <a class=\"button\" href=\"";
             echo (isset($context["base_url"]) ? $context["base_url"] : null);
             echo "/";
@@ -357,7 +353,7 @@ class __TwigTemplate_d9c20f01aabb95338087020e306c103dda736bab2b6e30712152c5a793e
 
     public function getDebugInfo()
     {
-        return array (  336 => 103,  334 => 102,  330 => 100,  318 => 97,  315 => 96,  312 => 94,  302 => 93,  298 => 91,  295 => 90,  292 => 88,  289 => 87,  276 => 84,  272 => 82,  269 => 81,  266 => 80,  263 => 79,  260 => 78,  258 => 77,  253 => 76,  251 => 75,  248 => 74,  238 => 69,  229 => 68,  226 => 67,  224 => 66,  221 => 65,  213 => 63,  203 => 61,  201 => 60,  198 => 59,  188 => 57,  186 => 56,  183 => 55,  180 => 54,  177 => 52,  174 => 51,  171 => 50,  168 => 49,  165 => 48,  162 => 47,  160 => 46,  149 => 45,  146 => 44,  143 => 43,  139 => 41,  135 => 39,  133 => 38,  127 => 35,  119 => 34,  116 => 33,  110 => 31,  103 => 29,  100 => 28,  94 => 27,  91 => 26,  86 => 25,  83 => 24,  81 => 23,  79 => 22,  73 => 21,  70 => 20,  67 => 19,  64 => 17,  61 => 16,  58 => 15,  55 => 14,  52 => 13,  49 => 12,  46 => 11,  44 => 10,  33 => 9,  29 => 7,  25 => 5,  21 => 3,  19 => 2,);
+        return array (  332 => 102,  330 => 101,  326 => 99,  314 => 96,  311 => 95,  308 => 93,  298 => 92,  294 => 90,  291 => 89,  288 => 87,  285 => 86,  272 => 83,  268 => 81,  265 => 80,  262 => 79,  259 => 78,  256 => 77,  254 => 76,  249 => 75,  247 => 74,  244 => 73,  234 => 68,  225 => 67,  222 => 66,  220 => 65,  217 => 64,  209 => 62,  199 => 60,  197 => 59,  194 => 58,  184 => 56,  182 => 55,  179 => 54,  176 => 53,  173 => 51,  170 => 50,  167 => 49,  164 => 48,  161 => 47,  158 => 46,  156 => 45,  145 => 44,  142 => 43,  139 => 42,  135 => 40,  131 => 38,  129 => 37,  123 => 34,  115 => 33,  112 => 32,  106 => 30,  99 => 28,  96 => 27,  90 => 26,  87 => 25,  82 => 24,  79 => 23,  77 => 22,  75 => 21,  69 => 20,  66 => 19,  63 => 18,  60 => 16,  57 => 15,  54 => 14,  51 => 13,  48 => 12,  45 => 11,  42 => 10,  40 => 9,  29 => 8,  25 => 5,  21 => 3,  19 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -376,7 +372,6 @@ class __TwigTemplate_d9c20f01aabb95338087020e306c103dda736bab2b6e30712152c5a793e
 {% else %}
   <ul class=\"archive-plus\">
 {% endif %}
-{{ dump(archive_plus) }}
 {# Iterate over all data #}
 {% for year ,months in archive_plus.data if months|length > 0  %}
   {# Set current year #}

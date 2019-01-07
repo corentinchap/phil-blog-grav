@@ -52,11 +52,6 @@ class __TwigTemplate_be4938a40c05ba08c078546df4457f82886768673eeb61fac78ad2cb895
         echo "</span></a>
     </nav>
 </header> 
-
-";
-        // line 10
-        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->dump($this->env, $context, $this->getAttribute(twig_first($this->env, $this->getAttribute((isset($context["header"]) ? $context["header"] : null), "image", array())), "name", array()));
-        echo "
    ";
     }
 
@@ -72,7 +67,7 @@ class __TwigTemplate_be4938a40c05ba08c078546df4457f82886768673eeb61fac78ad2cb895
 
     public function getDebugInfo()
     {
-        return array (  58 => 10,  50 => 6,  38 => 4,  36 => 3,  30 => 2,  19 => 1,);
+        return array (  50 => 6,  38 => 4,  36 => 3,  30 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -93,8 +88,6 @@ class __TwigTemplate_be4938a40c05ba08c078546df4457f82886768673eeb61fac78ad2cb895
         <a class=\"menu-button icon-menu\" href=\"#\"><span class=\"word\">{{ 'THEME_MASONRY.MENU_TITLE'|t }}</span></a>
     </nav>
 </header> 
-
-{{ dump(header.image|first.name) }}
    ", "partials/header.html.twig", "C:\\Users\\Coco_\\Documents\\GitHub\\blog-phil\\user\\themes\\masonry\\templates\\partials\\header.html.twig");
     }
 }

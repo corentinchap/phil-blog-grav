@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1546676837,
-    'checksum' => '968668f20ded619b976d35c1d236f4f1',
+    'timestamp' => 1546732739,
+    'checksum' => '7af92dc6043a1a7e99b8fd5c684dd511',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1545456819
+            ],
+            'plugins/archive_plus' => [
+                'file' => 'user/config/plugins/archive_plus.yaml',
+                'modified' => 1546732739
             ],
             'plugins/comments' => [
                 'file' => 'user/config/plugins/comments.yaml',
@@ -35,7 +39,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1546676835
+                'modified' => 1546732508
             ]
         ],
         'system/config' => [
@@ -64,6 +68,10 @@ return [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
                 'modified' => 1544825660
+            ],
+            'plugins/archive_plus' => [
+                'file' => 'user/plugins/archive_plus/archive_plus.yaml',
+                'modified' => 1546732555
             ],
             'plugins/comments' => [
                 'file' => 'user/plugins/comments/comments.yaml',
@@ -162,6 +170,29 @@ return [
                         'monthly' => 12,
                         'visitors' => 20
                     ]
+                ]
+            ],
+            'archive_plus' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'show' => [
+                    'counter' => true,
+                    'year' => true,
+                    'month' => true,
+                    'items' => true
+                ],
+                'limit' => [
+                    'year' => 2,
+                    'month' => 12,
+                    'items' => 40
+                ],
+                'order' => [
+                    'by' => 'date',
+                    'dir' => 'desc'
+                ],
+                'filter_combinator' => 'and',
+                'filters' => [
+                    'category' => 'blog-post'
                 ]
             ],
             'comments' => [

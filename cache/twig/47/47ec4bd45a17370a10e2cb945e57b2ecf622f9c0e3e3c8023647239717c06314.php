@@ -16,7 +16,7 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        $this->loadTemplate("post.html.twig", "post.html.twig", 1, "1569752115")->display($context);
+        $this->loadTemplate("post.html.twig", "post.html.twig", 1, "41005687")->display($context);
     }
 
     public function getTemplateName()
@@ -74,8 +74,9 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
 
     </article>
 </main>
-
-<aside class=\"read-next\">
+ {{ dump(page.nextSibling.header) }} 
+{% if page.nextSibling.header.image %}
+   <aside class=\"read-next\">
     {% if not page.isFirst %}
     <a class=\"read-next-story {% if page.nextSibling.header.image %}\" style=\"background-image: url({{ page.nextSibling.media[page.nextSibling.header.image].url }}){% else %}no-cover{% endif %}\" href=\"{{page.nextSibling.url}}\">
         <section class=\"post\">
@@ -92,7 +93,9 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
         </section>
     </a>
     {% endif %}
-</aside>
+</aside> 
+{% endif %}
+
 
 
 {% endblock %}
@@ -119,7 +122,7 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
 
 
 /* post.html.twig */
-class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe5955d_1569752115 extends Twig_Template
+class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe5955d_41005687 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -254,85 +257,96 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
 
     </article>
 </main>
-
-<aside class=\"read-next\">
+ ";
+        // line 36
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->dump($this->env, $context, $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "header", array()));
+        echo " 
+";
+        // line 37
+        if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "header", array()), "image", array())) {
+            // line 38
+            echo "   <aside class=\"read-next\">
     ";
-        // line 38
-        if ( !$this->getAttribute((isset($context["page"]) ? $context["page"] : null), "isFirst", array())) {
             // line 39
-            echo "    <a class=\"read-next-story ";
-            if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "header", array()), "image", array())) {
-                echo "\" style=\"background-image: url(";
-                echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "media", array()), $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "header", array()), "image", array()), array(), "array"), "url", array());
-                echo ")";
-            } else {
-                echo "no-cover";
-            }
-            echo "\" href=\"";
-            echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "url", array());
-            echo "\">
+            if ( !$this->getAttribute((isset($context["page"]) ? $context["page"] : null), "isFirst", array())) {
+                // line 40
+                echo "    <a class=\"read-next-story ";
+                if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "header", array()), "image", array())) {
+                    echo "\" style=\"background-image: url(";
+                    echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "media", array()), $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "header", array()), "image", array()), array(), "array"), "url", array());
+                    echo ")";
+                } else {
+                    echo "no-cover";
+                }
+                echo "\" href=\"";
+                echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "url", array());
+                echo "\">
         <section class=\"post\">
             <h2>";
-            // line 41
-            echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "title", array());
-            echo "</h2>
+                // line 42
+                echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "title", array());
+                echo "</h2>
             <p>";
-            // line 42
-            echo \Grav\Common\Utils::truncate(strip_tags($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "content", array())), 140);
-            echo "&hellip;</p>
+                // line 43
+                echo \Grav\Common\Utils::truncate(strip_tags($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "content", array())), 140);
+                echo "&hellip;</p>
         </section>
     </a>
     ";
-        }
-        // line 46
-        echo "    ";
-        if ( !$this->getAttribute((isset($context["page"]) ? $context["page"] : null), "isLast", array())) {
+            }
             // line 47
-            echo "    <a class=\"read-next-story prev ";
-            if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "header", array()), "image", array())) {
-                echo "\" style=\"background-image: url(";
-                echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "media", array()), $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "header", array()), "image", array()), array(), "array"), "url", array());
-                echo ")";
-            } else {
-                echo "no-cover";
-            }
-            echo "\" href=\"";
-            echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "url", array());
-            echo "\">
+            echo "    ";
+            if ( !$this->getAttribute((isset($context["page"]) ? $context["page"] : null), "isLast", array())) {
+                // line 48
+                echo "    <a class=\"read-next-story prev ";
+                if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "header", array()), "image", array())) {
+                    echo "\" style=\"background-image: url(";
+                    echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "media", array()), $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "header", array()), "image", array()), array(), "array"), "url", array());
+                    echo ")";
+                } else {
+                    echo "no-cover";
+                }
+                echo "\" href=\"";
+                echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "url", array());
+                echo "\">
         <section class=\"post\">
             <h2>";
-            // line 49
-            echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "title", array());
-            echo "</h2>
+                // line 50
+                echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "title", array());
+                echo "</h2>
             <p>";
-            // line 50
-            echo \Grav\Common\Utils::truncate(strip_tags($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "content", array())), 140);
-            echo "&hellip;</p>
+                // line 51
+                echo \Grav\Common\Utils::truncate(strip_tags($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "content", array())), 140);
+                echo "&hellip;</p>
         </section>
     </a>
     ";
+            }
+            // line 55
+            echo "</aside> 
+";
         }
-        // line 54
-        echo "</aside>
+        // line 57
+        echo "
 
 
 ";
     }
 
-    // line 59
+    // line 62
     public function block_bottom($context, array $blocks = array())
     {
-        // line 60
+        // line 63
         echo "
     ";
-        // line 61
+        // line 64
         if ($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "disqus", array())) {
-            // line 62
+            // line 65
             echo "        <script>
         (function() {
         var d = document, s = d.createElement('script');
         s.src = '//";
-            // line 65
+            // line 68
             echo $this->getAttribute((isset($context["site"]) ? $context["site"] : null), "disqus", array());
             echo ".disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
@@ -341,7 +355,7 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
         </script>
     ";
         }
-        // line 71
+        // line 74
         echo "
 ";
     }
@@ -358,7 +372,7 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
 
     public function getDebugInfo()
     {
-        return array (  345 => 71,  336 => 65,  331 => 62,  329 => 61,  326 => 60,  323 => 59,  316 => 54,  309 => 50,  305 => 49,  291 => 47,  288 => 46,  281 => 42,  277 => 41,  263 => 39,  261 => 38,  252 => 31,  246 => 28,  243 => 27,  241 => 26,  237 => 25,  231 => 21,  228 => 20,  185 => 19,  183 => 18,  177 => 17,  171 => 15,  169 => 14,  163 => 10,  161 => 9,  158 => 8,  155 => 7,  150 => 4,  147 => 3,  19 => 1,);
+        return array (  359 => 74,  350 => 68,  345 => 65,  343 => 64,  340 => 63,  337 => 62,  330 => 57,  326 => 55,  319 => 51,  315 => 50,  301 => 48,  298 => 47,  291 => 43,  287 => 42,  273 => 40,  271 => 39,  268 => 38,  266 => 37,  262 => 36,  255 => 31,  249 => 28,  246 => 27,  244 => 26,  240 => 25,  234 => 21,  231 => 20,  188 => 19,  186 => 18,  180 => 17,  174 => 15,  172 => 14,  166 => 10,  164 => 9,  161 => 8,  158 => 7,  153 => 4,  150 => 3,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -406,8 +420,9 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
 
     </article>
 </main>
-
-<aside class=\"read-next\">
+ {{ dump(page.nextSibling.header) }} 
+{% if page.nextSibling.header.image %}
+   <aside class=\"read-next\">
     {% if not page.isFirst %}
     <a class=\"read-next-story {% if page.nextSibling.header.image %}\" style=\"background-image: url({{ page.nextSibling.media[page.nextSibling.header.image].url }}){% else %}no-cover{% endif %}\" href=\"{{page.nextSibling.url}}\">
         <section class=\"post\">
@@ -424,7 +439,9 @@ class __TwigTemplate_1c9a9e57a1e3c718e8da5c3cfe95d4fcca4f4553ecf4fe56ec9d67b10fe
         </section>
     </a>
     {% endif %}
-</aside>
+</aside> 
+{% endif %}
+
 
 
 {% endblock %}

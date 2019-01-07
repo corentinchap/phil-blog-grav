@@ -47,19 +47,45 @@ class __TwigTemplate_9072fadfa15d847c1591b7734e72452a55084731c162716532484917fcd
                 echo "\">";
                 echo $this->getAttribute($context["page"], "menu", array());
                 echo "</a></li>
+        
+            ";
+                // line 13
+                $context['_parent'] = $context;
+                $context['_seq'] = twig_ensure_traversable($this->getAttribute($context["page"], "children", array()));
+                foreach ($context['_seq'] as $context["_key"] => $context["article"]) {
+                    // line 14
+                    echo "                    <li class=\"nav-";
+                    echo $this->getAttribute((isset($context["aricle"]) ? $context["aricle"] : null), "slug", array());
+                    echo " ";
+                    echo (isset($context["current_page"]) ? $context["current_page"] : null);
+                    echo "\" role=\"presentation\"><a href=\"";
+                    echo $this->getAttribute($context["article"], "url", array());
+                    echo "\">";
+                    echo $this->getAttribute($context["article"], "menu", array());
+                    echo "</a></li>
+            ";
+                }
+                $_parent = $context['_parent'];
+                unset($context['_seq'], $context['_iterated'], $context['_key'], $context['article'], $context['_parent'], $context['loop']);
+                $context = array_intersect_key($context, $_parent) + $_parent;
+                // line 16
+                echo "        
         ";
             }
-            // line 13
+            // line 18
             echo "        ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 14
+        // line 19
         echo "    </ul>
+           
+
+
     <div class=\"subscribe-button\">
         <a class=\"link-subscribe\" href=\"https://www.instagram.com/fairmont1388/\"> Follow me on <img class=\"insta-icon\" src=\"";
-        // line 16
+        // line 24
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/user/instagram.svg\" alt=\"instagram\"></a>
     </div>
@@ -80,7 +106,7 @@ class __TwigTemplate_9072fadfa15d847c1591b7734e72452a55084731c162716532484917fcd
 
     public function getDebugInfo()
     {
-        return array (  63 => 16,  59 => 14,  53 => 13,  41 => 11,  38 => 10,  35 => 9,  31 => 8,  23 => 3,  19 => 1,);
+        return array (  89 => 24,  82 => 19,  76 => 18,  72 => 16,  57 => 14,  53 => 13,  41 => 11,  38 => 10,  35 => 9,  31 => 8,  23 => 3,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -104,9 +130,17 @@ class __TwigTemplate_9072fadfa15d847c1591b7734e72452a55084731c162716532484917fcd
         {% if page.visible %}
         {% set current_page = (page.active or page.activeChild) ? 'nav-current' : '' %}
         <li class=\"nav-{{page.slug}} {{ current_page }}\" role=\"presentation\"><a href=\"{{ page.url }}\">{{ page.menu }}</a></li>
+        
+            {% for article in page.children %}
+                    <li class=\"nav-{{aricle.slug}} {{ current_page }}\" role=\"presentation\"><a href=\"{{ article.url }}\">{{ article.menu }}</a></li>
+            {% endfor %}
+        
         {% endif %}
         {% endfor %}
     </ul>
+           
+
+
     <div class=\"subscribe-button\">
         <a class=\"link-subscribe\" href=\"https://www.instagram.com/fairmont1388/\"> Follow me on <img class=\"insta-icon\" src=\"{{ theme_url }}/images/user/instagram.svg\" alt=\"instagram\"></a>
     </div>

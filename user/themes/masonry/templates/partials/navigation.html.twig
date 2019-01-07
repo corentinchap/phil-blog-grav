@@ -9,9 +9,17 @@
         {% if page.visible %}
         {% set current_page = (page.active or page.activeChild) ? 'nav-current' : '' %}
         <li class="nav-{{page.slug}} {{ current_page }}" role="presentation"><a href="{{ page.url }}">{{ page.menu }}</a></li>
+        
+            {% for article in page.children %}
+                    <li class="nav-{{aricle.slug}} {{ current_page }}" role="presentation"><a href="{{ article.url }}">{{ article.menu }}</a></li>
+            {% endfor %}
+        
         {% endif %}
         {% endfor %}
     </ul>
+           
+
+
     <div class="subscribe-button">
         <a class="link-subscribe" href="https://www.instagram.com/fairmont1388/"> Follow me on <img class="insta-icon" src="{{ theme_url }}/images/user/instagram.svg" alt="instagram"></a>
     </div>

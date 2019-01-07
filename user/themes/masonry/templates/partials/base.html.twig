@@ -28,6 +28,7 @@
 
         {% block stylesheets %}
             {% do assets.add('theme://css/screen.css',101) %}
+            {% do assets.add('theme://css/custom.css',100) %}
             {{ assets.css() }}
         {% endblock %}
         

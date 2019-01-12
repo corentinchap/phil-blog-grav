@@ -54,9 +54,7 @@ class __TwigTemplate_9072fadfa15d847c1591b7734e72452a55084731c162716532484917fcd
                 $context['_seq'] = twig_ensure_traversable($this->getAttribute($context["page"], "children", array()));
                 foreach ($context['_seq'] as $context["_key"] => $context["article"]) {
                     // line 14
-                    echo "                    <li class=\"nav-";
-                    echo $this->getAttribute((isset($context["aricle"]) ? $context["aricle"] : null), "slug", array());
-                    echo " ";
+                    echo "                    <li class=\"nav-article ";
                     echo (isset($context["current_page"]) ? $context["current_page"] : null);
                     echo "\" role=\"presentation\"><a href=\"";
                     echo $this->getAttribute($context["article"], "url", array());
@@ -106,7 +104,7 @@ class __TwigTemplate_9072fadfa15d847c1591b7734e72452a55084731c162716532484917fcd
 
     public function getDebugInfo()
     {
-        return array (  89 => 24,  82 => 19,  76 => 18,  72 => 16,  57 => 14,  53 => 13,  41 => 11,  38 => 10,  35 => 9,  31 => 8,  23 => 3,  19 => 1,);
+        return array (  87 => 24,  80 => 19,  74 => 18,  70 => 16,  57 => 14,  53 => 13,  41 => 11,  38 => 10,  35 => 9,  31 => 8,  23 => 3,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -132,7 +130,7 @@ class __TwigTemplate_9072fadfa15d847c1591b7734e72452a55084731c162716532484917fcd
         <li class=\"nav-{{page.slug}} {{ current_page }}\" role=\"presentation\"><a href=\"{{ page.url }}\">{{ page.menu }}</a></li>
         
             {% for article in page.children %}
-                    <li class=\"nav-{{aricle.slug}} {{ current_page }}\" role=\"presentation\"><a href=\"{{ article.url }}\">{{ article.menu }}</a></li>
+                    <li class=\"nav-article {{ current_page }}\" role=\"presentation\"><a href=\"{{ article.url }}\">{{ article.menu }}</a></li>
             {% endfor %}
         
         {% endif %}

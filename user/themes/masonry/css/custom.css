@@ -22,3 +22,10 @@
     box-shadow: none;
     background: #fff;
 }
+.archive-plus li {
+    border-bottom: 0;
+    line-height: 3rem!important;
+}
+.nav-article {
+    margin-left: 10px!important;
+}

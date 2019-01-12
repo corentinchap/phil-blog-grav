@@ -11,7 +11,7 @@
         <li class="nav-{{page.slug}} {{ current_page }}" role="presentation"><a href="{{ page.url }}">{{ page.menu }}</a></li>
         
             {% for article in page.children %}
-                    <li class="nav-{{aricle.slug}} {{ current_page }}" role="presentation"><a href="{{ article.url }}">{{ article.menu }}</a></li>
+                    <li class="nav-article {{ current_page }}" role="presentation"><a href="{{ article.url }}">{{ article.menu }}</a></li>
             {% endfor %}
         
         {% endif %}

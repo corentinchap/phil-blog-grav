@@ -1,7 +1,7 @@
 <?php
 
-/* archive.html.twig */
-class __TwigTemplate_11aa22c8382026ab9becde01c84563ffd99f36bd95acbb359b5cda000d8bfcb5 extends Twig_Template
+/* page.html.twig */
+class __TwigTemplate_b985a01ed1b2f22f3b5954e5bccd7e74f389425f88867780cf728e4e030ffe2f extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -16,12 +16,12 @@ class __TwigTemplate_11aa22c8382026ab9becde01c84563ffd99f36bd95acbb359b5cda000d8
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        $this->loadTemplate("archive.html.twig", "archive.html.twig", 1, "1322275187")->display($context);
+        $this->loadTemplate("page.html.twig", "page.html.twig", 1, "466143763")->display($context);
     }
 
     public function getTemplateName()
     {
-        return "archive.html.twig";
+        return "page.html.twig";
     }
 
     public function getDebugInfo()
@@ -49,15 +49,14 @@ class __TwigTemplate_11aa22c8382026ab9becde01c84563ffd99f36bd95acbb359b5cda000d8
 
 {% include 'partials/header.html.twig' %}
 
-
 <main class=\"content\" role=\"main\">
     <article class=\"post page\">
         <header class=\"post-header\">
             {% include 'partials/breadcrumbs.html.twig' %}
             <h1 class=\"post-title\">{{page.title}}</h1>
         </header>
-        <section class=\"post-content\">        
-            {% include 'partials/archive_plus.html.twig' %}
+        <section class=\"post-content\">
+            {{content}}
         </section>
     </article>
 </main>
@@ -66,19 +65,19 @@ class __TwigTemplate_11aa22c8382026ab9becde01c84563ffd99f36bd95acbb359b5cda000d8
 
 {% block footer %}{% endblock %}
 
-{% endembed %}", "archive.html.twig", "C:\\Users\\Coco_\\Documents\\GitHub\\blog-phil\\user\\themes\\masonry\\templates\\archive.html.twig");
+{% endembed %}", "page.html.twig", "C:\\Users\\Coco_\\Documents\\GitHub\\blog-phil\\user\\themes\\masonry\\templates\\page.html.twig");
     }
 }
 
 
-/* archive.html.twig */
-class __TwigTemplate_11aa22c8382026ab9becde01c84563ffd99f36bd95acbb359b5cda000d8bfcb5_1322275187 extends Twig_Template
+/* page.html.twig */
+class __TwigTemplate_b985a01ed1b2f22f3b5954e5bccd7e74f389425f88867780cf728e4e030ffe2f_466143763 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        $this->parent = $this->loadTemplate("partials/base.html.twig", "archive.html.twig", 1);
+        $this->parent = $this->loadTemplate("partials/base.html.twig", "page.html.twig", 1);
         $this->blocks = array(
             'body' => array($this, 'block_body'),
             'content' => array($this, 'block_content'),
@@ -111,41 +110,40 @@ class __TwigTemplate_11aa22c8382026ab9becde01c84563ffd99f36bd95acbb359b5cda000d8
         echo "
 ";
         // line 9
-        $this->loadTemplate("partials/header.html.twig", "archive.html.twig", 9)->display($context);
+        $this->loadTemplate("partials/header.html.twig", "page.html.twig", 9)->display($context);
         // line 10
         echo "
-
 <main class=\"content\" role=\"main\">
     <article class=\"post page\">
         <header class=\"post-header\">
             ";
+        // line 14
+        $this->loadTemplate("partials/breadcrumbs.html.twig", "page.html.twig", 14)->display($context);
         // line 15
-        $this->loadTemplate("partials/breadcrumbs.html.twig", "archive.html.twig", 15)->display($context);
-        // line 16
         echo "            <h1 class=\"post-title\">";
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "title", array());
         echo "</h1>
         </header>
-        <section class=\"post-content\">        
+        <section class=\"post-content\">
             ";
-        // line 19
-        $this->loadTemplate("partials/archive_plus.html.twig", "archive.html.twig", 19)->display($context);
-        // line 20
-        echo "        </section>
+        // line 18
+        echo (isset($context["content"]) ? $context["content"] : null);
+        echo "
+        </section>
     </article>
 </main>
 
 ";
     }
 
-    // line 26
+    // line 25
     public function block_footer($context, array $blocks = array())
     {
     }
 
     public function getTemplateName()
     {
-        return "archive.html.twig";
+        return "page.html.twig";
     }
 
     public function isTraitable()
@@ -155,7 +153,7 @@ class __TwigTemplate_11aa22c8382026ab9becde01c84563ffd99f36bd95acbb359b5cda000d8
 
     public function getDebugInfo()
     {
-        return array (  142 => 26,  134 => 20,  132 => 19,  125 => 16,  123 => 15,  116 => 10,  114 => 9,  111 => 8,  108 => 7,  103 => 4,  100 => 3,  19 => 1,);
+        return array (  140 => 25,  130 => 18,  123 => 15,  121 => 14,  115 => 10,  113 => 9,  110 => 8,  107 => 7,  102 => 4,  99 => 3,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -178,15 +176,14 @@ class __TwigTemplate_11aa22c8382026ab9becde01c84563ffd99f36bd95acbb359b5cda000d8
 
 {% include 'partials/header.html.twig' %}
 
-
 <main class=\"content\" role=\"main\">
     <article class=\"post page\">
         <header class=\"post-header\">
             {% include 'partials/breadcrumbs.html.twig' %}
             <h1 class=\"post-title\">{{page.title}}</h1>
         </header>
-        <section class=\"post-content\">        
-            {% include 'partials/archive_plus.html.twig' %}
+        <section class=\"post-content\">
+            {{content}}
         </section>
     </article>
 </main>
@@ -195,6 +192,6 @@ class __TwigTemplate_11aa22c8382026ab9becde01c84563ffd99f36bd95acbb359b5cda000d8
 
 {% block footer %}{% endblock %}
 
-{% endembed %}", "archive.html.twig", "C:\\Users\\Coco_\\Documents\\GitHub\\blog-phil\\user\\themes\\masonry\\templates\\archive.html.twig");
+{% endembed %}", "page.html.twig", "C:\\Users\\Coco_\\Documents\\GitHub\\blog-phil\\user\\themes\\masonry\\templates\\page.html.twig");
     }
 }

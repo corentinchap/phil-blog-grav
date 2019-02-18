@@ -1,3 +1,6 @@
+.site-wrapper{
+    overflow: hidden;
+}
 .insta-icon{    
     width: 22%;
     position: relative;
@@ -10,8 +13,9 @@
     display: none;
 }
 .instagram-wrapper img{
-    width: 100%;
+    width: 45%;
     filter: opacity(0.8);
+    margin: 10px;
 }
 .poweredby iframe{
     position: absolute;
@@ -64,6 +68,11 @@
     position: absolute;
     width: 100%;
     left: 0;
+    -webkit-filter: brightness(90%);
+    filter: brightness(90%);
+}
+body.nav-opened .nav-cover {
+    right: 450px;
 }
 @media screen and (min-width: 500px) {
     .nav{

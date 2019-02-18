@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/user/plugins/archive_plus/blueprints.yaml',
-    'modified' => 1546727368,
+    'modified' => 1550259173,
     'data' => [
         'name' => 'Archive Plus',
         'version' => '1.3.2',

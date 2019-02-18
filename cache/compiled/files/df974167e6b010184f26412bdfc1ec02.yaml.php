@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/user/plugins/login/languages/hr.yaml',
-    'modified' => 1544825660,
+    'modified' => 1550259452,
     'data' => [
         'PLUGIN_LOGIN' => [
             'ACCESS_DENIED' => 'Pristup odbijen...',

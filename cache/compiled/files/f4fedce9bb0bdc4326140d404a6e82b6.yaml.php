@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/user/themes/masonry/blueprints/post.yaml',
-    'modified' => 1546732501,
+    'modified' => 1550526844,
     'data' => [
         'title' => 'Home',
         '@extends' => [
@@ -11,7 +11,7 @@ return [
         'form' => [
             'validation' => 'strict',
             'fields' => [
-                'header.image' => [
+                'header.cover' => [
                     'type' => 'file',
                     'label' => 'banner image',
                     'multiple' => false,

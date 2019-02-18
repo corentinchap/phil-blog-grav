@@ -2,22 +2,22 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/user/config/site.yaml',
-    'modified' => 1545550608,
+    'modified' => 1550457358,
     'data' => [
-        'title' => 'Phil\'s Scheiss',
+        'title' => 'Willkommen bei meinem Blog',
         'default_lang' => 'ger',
         'author' => [
             'name' => 'Phil Reiss',
-            'email' => 'joe@example.com'
+            'email' => 'reiss_philipp@web.de'
         ],
         'taxonomies' => [
             0 => 'category',
             1 => 'tag'
         ],
         'metadata' => [
-            'description' => 'Ich mag Bradwursten und Blog schreiben',
-            'author' => 'Phil Reiss',
-            'keywords' => 'blog, travelling, writing'
+            'description' => 'Reiseblog ',
+            'author' => 'Philipp Reiss',
+            'keywords' => 'blog, travelling, writing, Vietnam, Asien, Reisen, Ho Chi Minh'
         ],
         'summary' => [
             'enabled' => true,
@@ -29,8 +29,8 @@ return [
             'route' => '/blog',
             'title' => 'Mediator'
         ],
-        'description' => 'Ich mag Bradwursten und Blog schreiben',
-        'logo' => 'user/logo.svg',
+        'description' => '',
+        'logo' => 'user/logo.png',
         'date_long' => 'd F Y',
         'date_short' => 'd M Y'
     ]

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/user/plugins/comments/languages.yaml',
-    'modified' => 1545551643,
+    'modified' => 1550259175,
     'data' => [
         'de' => [
             'PLUGIN_COMMENTS' => [

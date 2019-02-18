@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/user/plugins/admin/blueprints.yaml',
-    'modified' => 1544825660,
+    'modified' => 1550258929,
     'data' => [
         'name' => 'Admin Panel',
-        'version' => '1.8.15',
+        'version' => '1.8.19',
         'description' => 'Adds an advanced administration panel to manage your site',
         'icon' => 'empire',
         'author' => [
@@ -21,19 +21,19 @@ return [
         'dependencies' => [
             0 => [
                 'name' => 'grav',
-                'version' => '>=1.5.3'
+                'version' => '>=1.5.8'
             ],
             1 => [
                 'name' => 'form',
-                'version' => '>=2.14.0'
+                'version' => '>=2.16.4'
             ],
             2 => [
                 'name' => 'login',
-                'version' => '>=2.7.0'
+                'version' => '>=2.8.3'
             ],
             3 => [
                 'name' => 'email',
-                'version' => '>=2.7.0'
+                'version' => '>=2.7.2'
             ]
         ],
         'form' => [
@@ -193,6 +193,20 @@ return [
                     'label' => 'Parents Levels',
                     'size' => 'small',
                     'help' => 'The number of levels to show in parent select list'
+                ],
+                'pages.show_modular' => [
+                    'type' => 'toggle',
+                    'label' => 'Modular parents',
+                    'hightlight' => 1,
+                    'default' => 1,
+                    'options' => [
+                        1 => 'PLUGIN_ADMIN.ENABLED',
+                        0 => 'PLUGIN_ADMIN.DISABLED'
+                    ],
+                    'validate' => [
+                        'type' => 'bool'
+                    ],
+                    'help' => 'Show modular pages in the parent select list'
                 ],
                 'google_fonts' => [
                     'type' => 'toggle',

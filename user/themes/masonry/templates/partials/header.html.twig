@@ -1,4 +1,8 @@
-<header class="main-header post-head {% if header.image %}" style="background-image: url({{ page.media[header.image|first.name].url }}){% else %}no-cover{% endif %}">
+<header class="main-header post-head">
+        {% if header.image %}
+         {{dump(page.header.cover|first.name)}}
+         <img class="header-image" src="{{page.media[page.header.cover|first.name].url}}" srcset="{{page.media[page.header.cover|first.name].srcset()}}">
+        {% endif %}
     <nav class="main-nav {% if header.image %}overlay{% endif %} clearfix">
         {% if site.logo %}
             <a class="blog-logo" href="{{home_url}}"><img src="{{ theme_url }}/images/{{site.logo}}" alt="{{ site.author.title}}" /></a>

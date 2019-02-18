@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:\\Users\\Coco_\\Documents\\GitHub\\blog-phil\\user\\plugins\\jscomments/blueprints/jscomments.yaml',
-    'modified' => 1545559718,
+    'modified' => 1550259428,
     'data' => [
         'form' => [
             'fields' => [

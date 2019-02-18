@@ -1,343 +1,353 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1546732512,
-    'checksum' => '6df3a5aba43f92ac0cf6ec1b7c33f07a',
+    'timestamp' => 1550446910,
+    'checksum' => 'e1ead5167f097f3a333de1aea34fae24',
     'files' => [
         'system/languages' => [
             'ar' => [
                 'file' => 'system/languages/ar.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258776
             ],
             'ca' => [
                 'file' => 'system/languages/ca.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258776
             ],
             'cs' => [
                 'file' => 'system/languages/cs.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258776
             ],
             'da' => [
                 'file' => 'system/languages/da.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258776
             ],
             'de' => [
                 'file' => 'system/languages/de.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258776
             ],
             'el' => [
                 'file' => 'system/languages/el.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258775
             ],
             'en' => [
                 'file' => 'system/languages/en.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258775
             ],
             'es' => [
                 'file' => 'system/languages/es.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258775
             ],
             'fi' => [
                 'file' => 'system/languages/fi.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258775
             ],
             'fr' => [
                 'file' => 'system/languages/fr.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258775
             ],
             'hr' => [
                 'file' => 'system/languages/hr.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258775
             ],
             'hu' => [
                 'file' => 'system/languages/hu.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258774
             ],
             'it' => [
                 'file' => 'system/languages/it.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258774
             ],
             'ja' => [
                 'file' => 'system/languages/ja.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258775
             ],
             'lt' => [
                 'file' => 'system/languages/lt.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258774
             ],
             'nb' => [
                 'file' => 'system/languages/nb.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258774
             ],
             'nl' => [
                 'file' => 'system/languages/nl.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258774
             ],
             'no' => [
                 'file' => 'system/languages/no.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258774
             ],
             'pl' => [
                 'file' => 'system/languages/pl.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258774
             ],
             'pt' => [
                 'file' => 'system/languages/pt.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258774
             ],
             'ro' => [
                 'file' => 'system/languages/ro.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258774
             ],
             'ru' => [
                 'file' => 'system/languages/ru.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258773
             ],
             'sk' => [
                 'file' => 'system/languages/sk.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258773
             ],
             'sv' => [
                 'file' => 'system/languages/sv.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258773
             ],
             'th' => [
                 'file' => 'system/languages/th.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258773
             ],
             'tr' => [
                 'file' => 'system/languages/tr.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258773
             ],
             'uk' => [
                 'file' => 'system/languages/uk.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258773
             ],
             'vi' => [
                 'file' => 'system/languages/vi.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258773
             ]
         ],
         'user/plugins' => [
             'plugins/archive_plus' => [
                 'file' => 'user/plugins/archive_plus/languages.yaml',
-                'modified' => 1546727368
+                'modified' => 1550259172
             ],
             'plugins/comments' => [
                 'file' => 'user/plugins/comments/languages.yaml',
-                'modified' => 1545551643
+                'modified' => 1550259175
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/languages.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259180
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/languages.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259331
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259340
             ],
             'plugins/jscomments' => [
                 'file' => 'user/plugins/jscomments/languages.yaml',
-                'modified' => 1545559718
+                'modified' => 1550259425
             ]
         ],
         'user/plugins/admin/languages' => [
             'ar' => [
                 'file' => 'user/plugins/admin/languages/ar.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258943
             ],
             'bg' => [
                 'file' => 'user/plugins/admin/languages/bg.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258943
             ],
             'br' => [
                 'file' => 'user/plugins/admin/languages/br.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258943
             ],
             'ca' => [
                 'file' => 'user/plugins/admin/languages/ca.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258943
             ],
             'cs' => [
                 'file' => 'user/plugins/admin/languages/cs.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258943
             ],
             'cy' => [
                 'file' => 'user/plugins/admin/languages/cy.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258942
             ],
             'da' => [
                 'file' => 'user/plugins/admin/languages/da.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258943
             ],
             'de' => [
                 'file' => 'user/plugins/admin/languages/de.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258942
             ],
             'el' => [
                 'file' => 'user/plugins/admin/languages/el.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258942
             ],
             'en' => [
                 'file' => 'user/plugins/admin/languages/en.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258942
             ],
             'es' => [
                 'file' => 'user/plugins/admin/languages/es.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258942
             ],
             'et' => [
                 'file' => 'user/plugins/admin/languages/et.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258942
             ],
             'eu' => [
                 'file' => 'user/plugins/admin/languages/eu.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258941
             ],
             'fa' => [
                 'file' => 'user/plugins/admin/languages/fa.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258942
             ],
             'fi' => [
                 'file' => 'user/plugins/admin/languages/fi.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258941
             ],
             'fr' => [
                 'file' => 'user/plugins/admin/languages/fr.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258941
             ],
             'he' => [
                 'file' => 'user/plugins/admin/languages/he.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258941
             ],
             'hr' => [
                 'file' => 'user/plugins/admin/languages/hr.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258940
             ],
             'hu' => [
                 'file' => 'user/plugins/admin/languages/hu.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258941
             ],
             'id' => [
                 'file' => 'user/plugins/admin/languages/id.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258940
             ],
             'it' => [
                 'file' => 'user/plugins/admin/languages/it.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258941
             ],
             'ja' => [
                 'file' => 'user/plugins/admin/languages/ja.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258940
             ],
             'ko' => [
                 'file' => 'user/plugins/admin/languages/ko.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258940
             ],
             'lt' => [
                 'file' => 'user/plugins/admin/languages/lt.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258940
             ],
             'nl' => [
                 'file' => 'user/plugins/admin/languages/nl.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258940
             ],
             'no' => [
                 'file' => 'user/plugins/admin/languages/no.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258940
             ],
             'pl' => [
                 'file' => 'user/plugins/admin/languages/pl.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258940
             ],
             'pt' => [
                 'file' => 'user/plugins/admin/languages/pt.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258939
             ],
             'ro' => [
                 'file' => 'user/plugins/admin/languages/ro.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258939
             ],
             'ru' => [
                 'file' => 'user/plugins/admin/languages/ru.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258939
             ],
             'sk' => [
                 'file' => 'user/plugins/admin/languages/sk.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258939
             ],
             'sl' => [
                 'file' => 'user/plugins/admin/languages/sl.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258939
             ],
             'sv' => [
                 'file' => 'user/plugins/admin/languages/sv.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258939
             ],
             'th' => [
                 'file' => 'user/plugins/admin/languages/th.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258939
             ],
             'tlh' => [
                 'file' => 'user/plugins/admin/languages/tlh.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258938
             ],
             'tr' => [
                 'file' => 'user/plugins/admin/languages/tr.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258938
             ],
             'uk' => [
                 'file' => 'user/plugins/admin/languages/uk.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258938
             ],
             'vi' => [
                 'file' => 'user/plugins/admin/languages/vi.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258938
             ],
             'zh' => [
                 'file' => 'user/plugins/admin/languages/zh.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258937
+            ]
+        ],
+        'user/plugins/ganalytics/languages' => [
+            'de' => [
+                'file' => 'user/plugins/ganalytics/languages/de.yaml',
+                'modified' => 1550264118
+            ],
+            'en' => [
+                'file' => 'user/plugins/ganalytics/languages/en.yaml',
+                'modified' => 1550264118
             ]
         ],
         'user/plugins/login/languages' => [
             'de' => [
                 'file' => 'user/plugins/login/languages/de.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259452
             ],
             'en' => [
                 'file' => 'user/plugins/login/languages/en.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259451
             ],
             'es' => [
                 'file' => 'user/plugins/login/languages/es.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259451
             ],
             'fr' => [
                 'file' => 'user/plugins/login/languages/fr.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259451
             ],
             'hr' => [
                 'file' => 'user/plugins/login/languages/hr.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259452
             ],
             'hu' => [
                 'file' => 'user/plugins/login/languages/hu.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259452
             ],
             'no' => [
                 'file' => 'user/plugins/login/languages/no.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259452
             ],
             'ro' => [
                 'file' => 'user/plugins/login/languages/ro.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259451
             ],
             'ru' => [
                 'file' => 'user/plugins/login/languages/ru.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259452
             ]
         ]
     ],
@@ -472,6 +482,46 @@ return [
                 '2FA_SECRET_HELP' => 'Scannen Sie diesen QR-Code in Ihre [Authenticator App](https://learn.getgrav.org/admin-panel/2fa#apps). Es ist sinnvoll, das Secret an einem sicheren Ort zu sichern, falls Sie Ihre App neu installieren müssen. In der [Grav Doku](https://learn.getgrav.org/admin-panel/2fa) finden Sie weitere Informationen.',
                 '2FA_REGENERATE' => 'Neu generieren',
                 'BTN_CANCEL' => 'Abbrechen'
+            ],
+            'PLUGIN_GANALYTICS' => [
+                '_YES' => 'Ja',
+                '_NO' => 'Nein',
+                'ENABLED' => 'Aktiviert',
+                'DISABLED' => 'Deaktiviert',
+                'PLUGIN_STATUS' => 'Plugin Status',
+                'SECONDS' => 'Sekunden',
+                'SECTION_CONFIGURATION' => 'Einstellungen',
+                'SECTION_ADVANCED' => 'Erweitert',
+                'SECTION_COOKIE' => 'Cookie',
+                'SECTION_DEBUG' => 'Debugging',
+                'TACKING_ID' => 'Tracking-ID',
+                'TACKING_ID_HELP' => 'Google Analytics Tracking-ID',
+                'POSITION' => 'Code-Position',
+                'POSITION_HELP' => 'Position des Codes im HTML-Dokument (Head oder Body)',
+                'POSITION_HEAD' => 'Kopf',
+                'POSITION_BODY' => 'Inhaltsende',
+                'ASYNC' => 'Asynchron laden',
+                'ASYNC_HELP' => 'Erlaubt es modernen Browsern das Google Analytics Script im Voraus zu laden',
+                'FORCE_SSL' => 'SSL erzwingen',
+                'FORCE_SSL_HELP' => 'Alle Daten werden mit SSL gesendet, auch von unsicheren (HTTP) Seiten',
+                'ANONYMIZE_IP' => 'IP-Anonymisierung',
+                'ANONYMIZE_IP_HELP' => 'Aktiviert die Anonymisierung der IP-Adresse',
+                'OBJECT_NAME' => 'Globales (ga) Objekt',
+                'OBJECT_NAME_HELP' => 'Variablenname des globalen Google Analytics Objekts (ga)',
+                'BLOCKED_IPS' => 'Gesperrte IP-Adressen',
+                'BLOCKED_IPS_HELP' => 'Für die angegebenen IP-Adressen wird der Google Analytics Code nicht eingebunden',
+                'COOKIE_CONFIG' => 'Eigene Konfiguration',
+                'COOKIE_CONFIG_HELP' => 'Soll eine eigene Cookie-Konfiguration oder die von Google Analytics genutzt werden',
+                'COOKIE_NAME' => 'Name',
+                'COOKIE_NAME_HELP' => 'Der Name des Google Analytics Cookie',
+                'COOKIE_DOMAIN' => 'Domain',
+                'COOKIE_DOMAIN_HELP' => 'Cookie Domain. Standardmäßig wird der Host-Name der aktuellen URL benutzt',
+                'COOKIE_EXPIRES' => 'Läuft ab',
+                'COOKIE_EXPIRES_HELP' => 'Die Ablaufzeit des Google Analytics Cookie. Standard sind zwei Jahre',
+                'DEBUG_STATUS' => 'Debug-Version',
+                'DEBUG_STATUS_HELP' => 'Aktiviert die Debugging-Version der analytics.js Bibliothek',
+                'DEBUG_TRACE' => 'Trace-Debugging',
+                'DEBUG_TRACE_HELP' => 'Ausführlichere Informationen werden auf der Konsole ausgegeben'
             ],
             'PLUGIN_ADMIN' => [
                 'ADMIN_BETA_MSG' => 'Dies ist eine Beta-Version! Benutzung auf eigene Gefahr...',
@@ -1688,6 +1738,46 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'MANUALLY_ENABLE' => 'Manually Enable',
                 'MANUALLY_ENABLE_HELP' => 'When using \'activation email\' and \'notification email\', you can ensure the user can self activate, but requires manually enabling the user to login'
             ],
+            'PLUGIN_GANALYTICS' => [
+                '_YES' => 'Yes',
+                '_NO' => 'No',
+                'ENABLED' => 'Enabled',
+                'DISABLED' => 'Disabled',
+                'PLUGIN_STATUS' => 'Plugin status',
+                'SECONDS' => 'seconds',
+                'SECTION_CONFIGURATION' => 'Configuration',
+                'SECTION_ADVANCED' => 'Advanced',
+                'SECTION_COOKIE' => 'Cookie',
+                'SECTION_DEBUG' => 'Debug',
+                'TACKING_ID' => 'Tracking ID',
+                'TACKING_ID_HELP' => 'Google Analytics Tracking ID',
+                'POSITION' => 'Code Position',
+                'POSITION_HELP' => 'Code Position in the HTML document (head or body)',
+                'POSITION_HEAD' => 'Head',
+                'POSITION_BODY' => 'End of Body',
+                'ASYNC' => 'Load asynchronously',
+                'ASYNC_HELP' => 'Allow modern browsers to preload the Google Analytics script',
+                'FORCE_SSL' => 'Force SSL',
+                'FORCE_SSL_HELP' => 'Send all data using SSL, even from insecure (HTTP) pages',
+                'ANONYMIZE_IP' => 'IP Anonymization',
+                'ANONYMIZE_IP_HELP' => 'Enable the anonymization of the IP address',
+                'OBJECT_NAME' => 'Global (ga) Object',
+                'OBJECT_NAME_HELP' => 'Rename the global (ga) variable of the Google Analytics object',
+                'BLOCKED_IPS' => 'Blocked IP addresses',
+                'BLOCKED_IPS_HELP' => 'For the given IP addresses the Google Analytics code will not be embedded',
+                'COOKIE_CONFIG' => 'Custom Configuration',
+                'COOKIE_CONFIG_HELP' => 'Use a custom cookie configuration instead of the default one',
+                'COOKIE_NAME' => 'Name',
+                'COOKIE_NAME_HELP' => 'The Name of the Google Analytics cookie',
+                'COOKIE_DOMAIN' => 'Domain',
+                'COOKIE_DOMAIN_HELP' => 'The Cookie domain. Default is the hostname of the current URL',
+                'COOKIE_EXPIRES' => 'Expires',
+                'COOKIE_EXPIRES_HELP' => 'The expiration time of the Google Analytics cookie. Default is two years',
+                'DEBUG_STATUS' => 'Debug Version',
+                'DEBUG_STATUS_HELP' => 'Enable the debug version of the analytics.js library',
+                'DEBUG_TRACE' => 'Trace Debugging',
+                'DEBUG_TRACE_HELP' => 'Enabling trace debugging will output more verbose information to the console'
+            ],
             'PLUGIN_ADMIN' => [
                 'ADMIN_BETA_MSG' => 'This is a Beta release! Use this in production at your own risk...',
                 'ADMIN_REPORT_ISSUE' => 'Found an issue? Please report it on GitHub.',
@@ -2681,6 +2771,38 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'THANK_YOU_MESSAGE' => 'Thank you for writing your comment!'
             ],
             'PLUGIN_EMAIL' => [
+                'MAIL_ENGINE' => 'Mail Engine',
+                'CONTENT_TYPE' => 'Content type',
+                'CHARSET' => 'Charset',
+                'EMAIL_FORM' => 'Email from',
+                'EMAIL_FORM_PLACEHOLDER' => 'Default email from address',
+                'EMAIL_FROM_NAME' => 'Email from name',
+                'EMAIL_FROM_NAME_PLACEHOLDER' => 'Default email from name',
+                'EMAIL_TO' => 'Email to',
+                'EMAIL_TO_PLACEHOLDER' => 'Default email to address',
+                'EMAIL_TO_NAME' => 'Email to name',
+                'EMAIL_TO_NAME_PLACEHOLDER' => 'Default email to name',
+                'EMAIL_CC' => 'Email CC',
+                'EMAIL_CC_PLACEHOLDER' => 'Default email CC address',
+                'EMAIL_CC_NAME' => 'Email CC name',
+                'EMAIL_CC_NAME_PLACEHOLDER' => 'Default email CC name',
+                'EMAIL_BCC' => 'Email BCC',
+                'EMAIL_BCC_PLACEHOLDER' => 'Default email BCC address',
+                'EMAIL_REPLY_TO' => 'Email reply-to',
+                'EMAIL_REPLY_TO_PLACEHOLDER' => 'Default email reply-to address',
+                'EMAIL_REPLY_TO_NAME' => 'Email reply-to name',
+                'EMAIL_REPLY_TO_NAME_PLACEHOLDER' => 'Default email reply-to name',
+                'EMAIL_BODY' => 'Email body',
+                'EMAIL_BODY_PLACEHOLDER' => 'Defaults to a table of all form fields',
+                'SMTP_SERVER' => 'SMTP server',
+                'SMTP_SERVER_PLACEHOLDER' => 'e.g. smtp.google.com',
+                'SMTP_PORT' => 'SMTP port',
+                'SMTP_PORT_PLACEHOLDER' => 'Defaults to 25 (plaintext) / 587 (encrypted)',
+                'SMTP_ENCRYPTION' => 'SMTP encryption',
+                'SMTP_LOGIN_NAME' => 'SMTP login name',
+                'SMTP_PASSWORD' => 'SMTP password',
+                'PATH_TO_SENDMAIL' => 'Path to sendmail',
+                'DEBUG' => 'Debug',
                 'EMAIL_NOT_CONFIGURED' => 'Email not configured',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Please configure a \'to\' address in the Email Plugin settings, or in the form',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Please configure a \'from\' address in the Email Plugin settings, or in the form',
@@ -9503,6 +9625,38 @@ Calea: `%2$s`
                 'BY' => 'от'
             ],
             'PLUGIN_EMAIL' => [
+                'MAIL_ENGINE' => 'Почтовая система',
+                'CONTENT_TYPE' => 'Тип контента',
+                'CHARSET' => 'Кодировка',
+                'EMAIL_FORM' => 'Почта отправителя',
+                'EMAIL_FORM_PLACEHOLDER' => 'Email адрес отправителя по умолчанию',
+                'EMAIL_FROM_NAME' => 'Имя почты отправителя',
+                'EMAIL_FROM_NAME_PLACEHOLDER' => 'Email имя отправителя по умолчанию',
+                'EMAIL_TO' => 'Почта получателя',
+                'EMAIL_TO_PLACEHOLDER' => 'Email адрес получателя по умолчанию',
+                'EMAIL_TO_NAME' => 'Имя почты получателя',
+                'EMAIL_TO_NAME_PLACEHOLDER' => 'Email имя получателя по умолчанию',
+                'EMAIL_CC' => 'Почта CC',
+                'EMAIL_CC_PLACEHOLDER' => 'Email CC адрес по умолчанию',
+                'EMAIL_CC_NAME' => 'Имя почты CC',
+                'EMAIL_CC_NAME_PLACEHOLDER' => 'Email CC имя по умолчанию',
+                'EMAIL_BCC' => 'Почта BCC',
+                'EMAIL_BCC_PLACEHOLDER' => 'Email BCC адрес по умолчанию',
+                'EMAIL_REPLY_TO' => 'Почта для ответов',
+                'EMAIL_REPLY_TO_PLACEHOLDER' => 'Email для ответов адрес по умолчанию',
+                'EMAIL_REPLY_TO_NAME' => 'Имя почты для ответов',
+                'EMAIL_REPLY_TO_NAME_PLACEHOLDER' => 'Email для ответов имя по умолчанию',
+                'EMAIL_BODY' => 'Тело сообщения',
+                'EMAIL_BODY_PLACEHOLDER' => 'По умолчанию используется таблица всех полей формы',
+                'SMTP_SERVER' => 'SMTP сервер',
+                'SMTP_SERVER_PLACEHOLDER' => 'e.g. smtp.google.com',
+                'SMTP_PORT' => 'SMTP порт',
+                'SMTP_PORT_PLACEHOLDER' => 'По умолчанию 25 (plaintext) / 587 (encrypted)',
+                'SMTP_ENCRYPTION' => 'SMTP шифрование',
+                'SMTP_LOGIN_NAME' => 'SMTP логин',
+                'SMTP_PASSWORD' => 'SMTP пароль',
+                'PATH_TO_SENDMAIL' => 'Путь к sendmail',
+                'DEBUG' => 'Отладка',
                 'EMAIL_NOT_CONFIGURED' => 'Электронная почта не настроена',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Пожалуйста настройте адрес получателя (\'to\') в настройках плагина Email Plugin, или на форме',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Пожалуйста настройте адрес отправителя (\'from\') в настройках плагина Email Plugin, или на форме',
@@ -23502,6 +23656,13 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'ACTIVATE' => 'Активувати',
                 'CACHE_PERMS' => 'Права доступу кешу'
             ],
+            'PLUGIN_EMAIL' => [
+                'EMAIL_NOT_CONFIGURED' => 'Електронна пошта не налаштована',
+                'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Будь ласка налаштуйте адресу одержувача (\'to\') в налаштуваннях плагіна Email Plugin, або на формі',
+                'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Будь ласка налаштуйте адресу відправника (\'from\') в налаштуваннях плагіна Email Plugin, або на формі',
+                'TEST_EMAIL_BODY' => '<h1>Тестування електронної пошти</h1><p>Це тестовий лист відправлено на основі такої конфігурації:</p>  <p><pre>%1$s</pre></p>',
+                'EMAIL_FOOTER' => 'GetGrav.org'
+            ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Форма не підтверджена. Відсутнє одне або кілька обов\'язкових полів.',
                 'NONCE_NOT_VALIDATED' => 'Упс, у вас виникла проблема, перевірте свої дані і відправте форму ще раз.',
@@ -24540,7 +24701,7 @@ Path: `%2$s`
                 6 => 'søndag'
             ]
         ],
-        'checksum' => '6df3a5aba43f92ac0cf6ec1b7c33f07a',
-        'timestamp' => 1546732512
+        'checksum' => 'e1ead5167f097f3a333de1aea34fae24',
+        'timestamp' => 1550446910
     ]
 ];

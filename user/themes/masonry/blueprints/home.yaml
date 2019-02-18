@@ -1,0 +1,16 @@
+title: Home
+'@extends':
+    type: default
+form:
+   validation: strict
+   fields:
+      header.cover:
+        type: file
+        label: Homepage Image
+        multiple: false
+        destination: 'self@'
+        random_name: true
+        avoid_overwriting: false
+        accept:
+          - image/*
+

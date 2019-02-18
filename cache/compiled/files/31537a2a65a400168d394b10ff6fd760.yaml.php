@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/user/plugins/admin/admin.yaml',
-    'modified' => 1544825660,
+    'modified' => 1550258930,
     'data' => [
         'enabled' => true,
         'route' => '/admin',
@@ -28,7 +28,8 @@ return [
             'dashboard-pages' => true
         ],
         'pages' => [
-            'show_parents' => 'both'
+            'show_parents' => 'both',
+            'show_modular' => true
         ],
         'session' => [
             'timeout' => 1800

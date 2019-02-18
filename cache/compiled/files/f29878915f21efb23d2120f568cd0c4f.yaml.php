@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/user/plugins/admin/blueprints/config/media.yaml',
-    'modified' => 1544825660,
+    'modified' => 1550258935,
     'data' => [
         'title' => 'PLUGIN_ADMIN.MEDIA',
         'form' => [

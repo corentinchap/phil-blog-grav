@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/user/plugins/archive_plus/archive_plus.yaml',
-    'modified' => 1546732555,
+    'modified' => 1550259173,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,

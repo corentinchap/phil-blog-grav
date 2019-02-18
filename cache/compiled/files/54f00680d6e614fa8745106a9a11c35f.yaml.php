@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/user/plugins/email/blueprints.yaml',
-    'modified' => 1544825660,
+    'modified' => 1550259180,
     'data' => [
         'name' => 'Email',
-        'version' => '2.7.1',
+        'version' => '2.7.2',
         'description' => 'Enables the emailing system for Grav',
         'icon' => 'envelope',
         'author' => [
@@ -41,7 +41,7 @@ return [
                 ],
                 'mailer.engine' => [
                     'type' => 'select',
-                    'label' => 'Mail Engine',
+                    'label' => 'PLUGIN_EMAIL.MAIL_ENGINE',
                     'size' => 'medium',
                     'options' => [
                         'none' => 'Disabled',
@@ -51,7 +51,7 @@ return [
                 ],
                 'content_type' => [
                     'type' => 'select',
-                    'label' => 'Content type',
+                    'label' => 'PLUGIN_EMAIL.CONTENT_TYPE',
                     'size' => 'medium',
                     'default' => 'text/html',
                     'options' => [
@@ -62,14 +62,14 @@ return [
                 'charset' => [
                     'type' => 'text',
                     'size' => 'medium',
-                    'label' => 'Charset',
+                    'label' => 'PLUGIN_EMAIL.CHARSET',
                     'placeholder' => 'Defaults to UTF-8'
                 ],
                 'from' => [
                     'type' => 'email',
                     'size' => 'medium',
-                    'label' => 'Email from',
-                    'placeholder' => 'Default email from address',
+                    'label' => 'PLUGIN_EMAIL.EMAIL_FORM',
+                    'placeholder' => 'PLUGIN_EMAIL.EMAIL_FORM_PLACEHOLDER',
                     'validate' => [
                         'required' => true,
                         'type' => 'email'
@@ -78,14 +78,14 @@ return [
                 'from_name' => [
                     'type' => 'text',
                     'size' => 'medium',
-                    'label' => 'Email from name',
-                    'placeholder' => 'Default email from name'
+                    'label' => 'PLUGIN_EMAIL.EMAIL_FROM_NAME',
+                    'placeholder' => 'PLUGIN_EMAIL.EMAIL_FROM_NAME_PLACEHOLDER'
                 ],
                 'to' => [
                     'type' => 'email',
                     'size' => 'medium',
-                    'label' => 'Email to',
-                    'placeholder' => 'Default email to address',
+                    'label' => 'PLUGIN_EMAIL.EMAIL_TO',
+                    'placeholder' => 'PLUGIN_EMAIL.EMAIL_TO_PLACEHOLDER',
                     'multiple' => true,
                     'validate' => [
                         'required' => true,
@@ -95,14 +95,14 @@ return [
                 'to_name' => [
                     'type' => 'text',
                     'size' => 'medium',
-                    'label' => 'Email to name',
-                    'placeholder' => 'Default email to name'
+                    'label' => 'PLUGIN_EMAIL.EMAIL_TO_NAME',
+                    'placeholder' => 'PLUGIN_EMAIL.EMAIL_TO_NAME_PLACEHOLDER'
                 ],
                 'cc' => [
                     'type' => 'email',
                     'size' => 'medium',
-                    'label' => 'Email CC',
-                    'placeholder' => 'Default email CC address',
+                    'label' => 'PLUGIN_EMAIL.EMAIL_CC',
+                    'placeholder' => 'PLUGIN_EMAIL.EMAIL_CC_PLACEHOLDER',
                     'multiple' => true,
                     'validate' => [
                         'type' => 'email'
@@ -111,14 +111,14 @@ return [
                 'cc_name' => [
                     'type' => 'text',
                     'size' => 'medium',
-                    'label' => 'Email CC name',
-                    'placeholder' => 'Default email CC name'
+                    'label' => 'PLUGIN_EMAIL.EMAIL_CC_NAME',
+                    'placeholder' => 'PLUGIN_EMAIL.EMAIL_CC_NAME_PLACEHOLDER'
                 ],
                 'bcc' => [
                     'type' => 'email',
                     'size' => 'medium',
-                    'label' => 'Email BCC',
-                    'placeholder' => 'Default email BCC address',
+                    'label' => 'PLUGIN_EMAIL.EMAIL_BCC',
+                    'placeholder' => 'PLUGIN_EMAIL.EMAIL_BCC_PLACEHOLDER',
                     'multiple' => true,
                     'validate' => [
                         'type' => 'email'
@@ -127,8 +127,8 @@ return [
                 'reply_to' => [
                     'type' => 'email',
                     'size' => 'medium',
-                    'label' => 'Email reply-to',
-                    'placeholder' => 'Default email reply-to address',
+                    'label' => 'PLUGIN_EMAIL.EMAIL_REPLY_TO',
+                    'placeholder' => 'PLUGIN_EMAIL.EMAIL_REPLY_TO_PLACEHOLDER',
                     'multiple' => true,
                     'validate' => [
                         'type' => 'email'
@@ -137,26 +137,26 @@ return [
                 'reply_to_name' => [
                     'type' => 'text',
                     'size' => 'medium',
-                    'label' => 'Email reply-to name',
-                    'placeholder' => 'Default email reply-to name'
+                    'label' => 'PLUGIN_EMAIL.EMAIL_REPLY_TO_NAME',
+                    'placeholder' => 'PLUGIN_EMAIL.EMAIL_REPLY_TO_NAME_PLACEHOLDER'
                 ],
                 'body' => [
                     'type' => 'textarea',
                     'size' => 'medium',
-                    'label' => 'Email body',
-                    'placeholder' => 'Defaults to a table of all form fields'
+                    'label' => 'PLUGIN_EMAIL.EMAIL_BODY',
+                    'placeholder' => 'PLUGIN_EMAIL.EMAIL_BODY_PLACEHOLDER'
                 ],
                 'mailer.smtp.server' => [
                     'type' => 'text',
                     'size' => 'medium',
-                    'label' => 'SMTP server',
-                    'placeholder' => 'e.g. smtp.google.com'
+                    'label' => 'PLUGIN_EMAIL.SMTP_SERVER',
+                    'placeholder' => 'PLUGIN_EMAIL.SMTP_SERVER_PLACEHOLDER'
                 ],
                 'mailer.smtp.port' => [
                     'type' => 'text',
                     'size' => 'small',
-                    'label' => 'SMTP port',
-                    'placeholder' => 'Defaults to 25 (plaintext) / 587 (encrypted)',
+                    'label' => 'PLUGIN_EMAIL.SMTP_PORT',
+                    'placeholder' => 'PLUGIN_EMAIL.SMTP_PORT_PLACEHOLDER',
                     'validate' => [
                         'type' => 'number',
                         'min' => 1,
@@ -166,7 +166,7 @@ return [
                 'mailer.smtp.encryption' => [
                     'type' => 'select',
                     'size' => 'medium',
-                    'label' => 'SMTP encryption',
+                    'label' => 'PLUGIN_EMAIL.SMTP_ENCRYPTION',
                     'options' => [
                         'none' => 'None',
                         'ssl' => 'SSL',
@@ -176,22 +176,22 @@ return [
                 'mailer.smtp.user' => [
                     'type' => 'text',
                     'size' => 'medium',
-                    'label' => 'SMTP login name'
+                    'label' => 'PLUGIN_EMAIL.SMTP_LOGIN_NAME'
                 ],
                 'mailer.smtp.password' => [
                     'type' => 'password',
                     'size' => 'medium',
-                    'label' => 'SMTP password'
+                    'label' => 'PLUGIN_EMAIL.SMTP_PASSWORD'
                 ],
                 'mailer.sendmail.bin' => [
                     'type' => 'text',
                     'size' => 'medium',
-                    'label' => 'Path to sendmail',
+                    'label' => 'PLUGIN_EMAIL.PATH_TO_SENDMAIL',
                     'placeholder' => '/usr/sbin/sendmail'
                 ],
                 'debug' => [
                     'type' => 'toggle',
-                    'label' => 'Debug',
+                    'label' => 'PLUGIN_EMAIL.DEBUG',
                     'highlight' => 1,
                     'default' => 0,
                     'options' => [

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/system/blueprints/user/account.yaml',
-    'modified' => 1544825660,
+    'modified' => 1550258749,
     'data' => [
         'title' => 'Account',
         'form' => [

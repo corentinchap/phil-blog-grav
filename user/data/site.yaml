@@ -1,18 +1,13 @@
 # Home Page Title
-title: 'PHIL IS BACK'
-description: 'FILL ME WITH GOOD STUFF'
+title: 'Phil's travel blog
+description: 'Travel blog about a german living in Ho Chi Minh City'
 
 author:
-  name: 'Mesut Koca'
-  email: youremail@domain.com
+  name: 'Phil Reiss'
+  email: 
   # Avatar image optional (under your/site/user/themes/masonry/images/avatar.png)
   image: avatar.png
-  # Optional
-  link: 'https://twitter.com/twitterusername'
-  # Optional
-  location: Germany
-  # Optional
-  bio: 'Type something cool here.'
+
 
 
 # Optional

@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/user/plugins/login/blueprints.yaml',
-    'modified' => 1544825660,
+    'modified' => 1550259439,
     'data' => [
         'name' => 'Login',
-        'version' => '2.8.2',
+        'version' => '2.8.3',
         'description' => 'Enables user authentication and login screen.',
         'icon' => 'sign-in',
         'author' => [

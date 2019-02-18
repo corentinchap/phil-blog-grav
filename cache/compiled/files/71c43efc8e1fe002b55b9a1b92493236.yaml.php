@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/user/plugins/archive_plus/languages.yaml',
-    'modified' => 1546727368,
+    'modified' => 1550259172,
     'data' => [
         'cz' => [
             'PLUGINS' => [

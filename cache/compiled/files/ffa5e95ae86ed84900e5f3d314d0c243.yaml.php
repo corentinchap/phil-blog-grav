@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/system/languages/pl.yaml',
-    'modified' => 1544825660,
+    'modified' => 1550258774,
     'data' => [
         'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s

@@ -25,10 +25,10 @@
 
         {# Fonts #}
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
-
+       
         {% block stylesheets %}
-            {% do assets.add('theme://css/screen.css',101) %}
-            {% do assets.add('theme://css/custom.css',102) %}
+            {% do assets.add('theme://css/screen.css',102) %}
+            {% do assets.add('theme://css/custom.css',100) %}
             {{ assets.css() }}
         {% endblock %}
         
@@ -49,7 +49,11 @@
 
             <footer class="site-footer clearfix">
                 <section class="copyright"><a href="{{base_url}}">{{site.title}}</a> &copy; 2019</section>
-                <section class="poweredby">Developed by <a href="http://chapatte.co">Corentin Chapatte</a> with Grav</section>
+                <section class="poweredby">Developed by <a href="http://chapatte.co">Corentin Chapatte</a> with Grav
+                 <a href="https://www.iubenda.com/privacy-policy/87963699" class="iubenda-white iubenda-embed" title="Privacy Policy ">Privacy Policy</a>
+                    <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                
+                </section>
             </footer>
         </div>
 

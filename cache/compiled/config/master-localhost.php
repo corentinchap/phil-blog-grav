@@ -1,113 +1,137 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1546732739,
-    'checksum' => '7af92dc6043a1a7e99b8fd5c684dd511',
+    'timestamp' => 1550457362,
+    'checksum' => '81a78f583363175583b7308bad83f3ef',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1545456819
+                'modified' => 1550258860
             ],
             'plugins/archive_plus' => [
                 'file' => 'user/config/plugins/archive_plus.yaml',
-                'modified' => 1546732739
+                'modified' => 1550258861
             ],
             'plugins/comments' => [
                 'file' => 'user/config/plugins/comments.yaml',
-                'modified' => 1546673620
+                'modified' => 1550258861
+            ],
+            'plugins/ganalytics' => [
+                'file' => 'user/config/plugins/ganalytics.yaml',
+                'modified' => 1550264472
+            ],
+            'plugins/instagram' => [
+                'file' => 'user/config/plugins/instagram.yaml',
+                'modified' => 1550442714
             ],
             'plugins/jscomments' => [
                 'file' => 'user/config/plugins/jscomments.yaml',
-                'modified' => 1546674122
+                'modified' => 1550258861
             ],
             'plugins/pagination' => [
                 'file' => 'user/config/plugins/pagination.yaml',
-                'modified' => 1545458243
+                'modified' => 1550258861
+            ],
+            'plugins/resize-images' => [
+                'file' => 'user/config/plugins/resize-images.yaml',
+                'modified' => 1550454976
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1545456817
+                'modified' => 1550258860
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1545550608
+                'modified' => 1550457358
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1545456819
+                'modified' => 1550258859
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1546732508
+                'modified' => 1550446904
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258751
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258751
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258751
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258751
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258751
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1544825660
+                'modified' => 1550258930
             ],
             'plugins/archive_plus' => [
                 'file' => 'user/plugins/archive_plus/archive_plus.yaml',
-                'modified' => 1546732555
+                'modified' => 1550259173
             ],
             'plugins/comments' => [
                 'file' => 'user/plugins/comments/comments.yaml',
-                'modified' => 1545551643
+                'modified' => 1550259175
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259177
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259331
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259340
+            ],
+            'plugins/ganalytics' => [
+                'file' => 'user/plugins/ganalytics/ganalytics.yaml',
+                'modified' => 1550264118
+            ],
+            'plugins/instagram' => [
+                'file' => 'user/plugins/instagram/instagram.yaml',
+                'modified' => 1550439973
             ],
             'plugins/jscomments' => [
                 'file' => 'user/plugins/jscomments/jscomments.yaml',
-                'modified' => 1546669920
+                'modified' => 1550259425
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259439
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1544825660
+                'modified' => 1550259570
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/pagination.yaml',
-                'modified' => 1545458237
+                'modified' => 1550259573
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1545543789
+                'modified' => 1550259583
+            ],
+            'plugins/resize-images' => [
+                'file' => 'user/plugins/resize-images/resize-images.yaml',
+                'modified' => 1550445362
             ]
         ]
     ],
@@ -138,7 +162,8 @@ return [
                     'dashboard-pages' => true
                 ],
                 'pages' => [
-                    'show_parents' => 'both'
+                    'show_parents' => 'both',
+                    'show_modular' => true
                 ],
                 'session' => [
                     'timeout' => 1800
@@ -352,6 +377,37 @@ return [
                     ]
                 ]
             ],
+            'ganalytics' => [
+                'enabled' => true,
+                'trackingId' => 'UA-46181834-5',
+                'position' => 'head',
+                'objectName' => 'ga',
+                'forceSsl' => false,
+                'async' => false,
+                'anonymizeIp' => false,
+                'blockedIps' => [
+                    
+                ],
+                'cookieConfig' => false,
+                'cookieName' => '_ga',
+                'cookieDomain' => '',
+                'cookieExpires' => 63072000,
+                'debugStatus' => false,
+                'debugTrace' => false
+            ],
+            'instagram' => [
+                'enabled' => true,
+                'route' => '/',
+                'filters' => [
+                    'category' => NULL
+                ],
+                'feed_parameters' => [
+                    'count' => 2,
+                    'cache_time' => 1,
+                    'user_id' => '93349d7e32484aa0a441c5d6bc9aa93f',
+                    'access_token' => '216711765.1677ed0.c27445ce4a65464b8002f8cef44a038a'
+                ]
+            ],
             'jscomments' => [
                 'enabled' => true,
                 'active' => true,
@@ -504,6 +560,33 @@ return [
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'resize-images' => [
+                'enabled' => true,
+                'adapter' => 'imagick',
+                'remove_original' => true,
+                'sizes' => [
+                    0 => [
+                        'width' => 640,
+                        'quality' => 92
+                    ],
+                    1 => [
+                        'width' => 1000,
+                        'quality' => 90
+                    ],
+                    2 => [
+                        'width' => 1500,
+                        'quality' => 87
+                    ],
+                    3 => [
+                        'width' => 2500,
+                        'quality' => 85
+                    ],
+                    4 => [
+                        'width' => 3500,
+                        'quality' => 82
+                    ]
+                ]
             ]
         ],
         'media' => [
@@ -812,20 +895,20 @@ return [
             'salt' => 'UcTPbuoVDx4aif'
         ],
         'site' => [
-            'title' => 'Phil\'s Scheiss',
+            'title' => 'Willkommen bei meinem Blog',
             'default_lang' => 'ger',
             'author' => [
                 'name' => 'Phil Reiss',
-                'email' => 'joe@example.com'
+                'email' => 'reiss_philipp@web.de'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Ich mag Bradwursten und Blog schreiben',
-                'author' => 'Phil Reiss',
-                'keywords' => 'blog, travelling, writing'
+                'description' => 'Reiseblog ',
+                'author' => 'Philipp Reiss',
+                'keywords' => 'blog, travelling, writing, Vietnam, Asien, Reisen, Ho Chi Minh'
             ],
             'summary' => [
                 'enabled' => true,
@@ -839,8 +922,8 @@ return [
                 'route' => '/blog',
                 'title' => 'Mediator'
             ],
-            'description' => 'Ich mag Bradwursten und Blog schreiben',
-            'logo' => 'user/logo.svg',
+            'description' => '',
+            'logo' => 'user/logo.png',
             'date_long' => 'd F Y',
             'date_short' => 'd M Y'
         ],

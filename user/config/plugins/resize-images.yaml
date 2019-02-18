@@ -1,0 +1,13 @@
+enabled: true
+adapter: imagick
+remove_original: true
+sizes:
+  -
+    width: 640
+    quality: 92
+  -
+    width: 1000
+    quality: 90
+  -
+    width: 1500
+    quality: 87

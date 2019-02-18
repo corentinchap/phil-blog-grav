@@ -4,7 +4,7 @@ title: Home
 form:
    validation: strict
    fields:
-      header.image:
+      header.cover:
         type: file
         label: banner image
         multiple: false

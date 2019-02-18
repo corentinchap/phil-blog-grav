@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/Coco_/Documents/GitHub/blog-phil/system/config/system.yaml',
-    'modified' => 1544825660,
+    'modified' => 1550258751,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',

@@ -68,8 +68,15 @@
     position: absolute;
     width: 100%;
     left: 0;
+    top: 150px;
     -webkit-filter: brightness(90%);
     filter: brightness(90%);
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+.main-header .header-image .home{
+    -webkit-transform: unset;
+    transform: unset;
 }
 body.nav-opened .nav-cover {
     right: 450px;

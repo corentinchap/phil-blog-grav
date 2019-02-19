@@ -19,7 +19,7 @@ class __TwigTemplate_8c722c63d5a385db38bd15243c5c5b5937f6d7bafc71094eb2cb3a05c2a
         echo "<article class=\"post\" itemscope itemtype=\"http://schema.org/BlogPosting\" role=\"article\">
     ";
         // line 2
-        if ($this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : null), "header", []), "image", [])) {
+        if ($this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : null), "header", []), "cover", [])) {
             // line 3
             echo "        <figure class=\"post-image\" itemprop=\"image\">
             <a href=\"";
@@ -139,7 +139,7 @@ class __TwigTemplate_8c722c63d5a385db38bd15243c5c5b5937f6d7bafc71094eb2cb3a05c2a
     public function getSourceContext()
     {
         return new Twig_Source("<article class=\"post\" itemscope itemtype=\"http://schema.org/BlogPosting\" role=\"article\">
-    {% if post.header.image %}
+    {% if post.header.cover %}
         <figure class=\"post-image\" itemprop=\"image\">
             <a href=\"{{ post.url }}\" class=\"js-ajax-link\">
             <img src=\"{{ post.media[post.header.cover|first.name].cropResize(350, 350).url }}\" width=\"100%\" height=\"100%\" alt=\"\"></a>

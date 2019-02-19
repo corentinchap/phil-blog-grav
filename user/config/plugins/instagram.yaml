@@ -5,5 +5,5 @@ filters:
 feed_parameters:
   count: 2
   cache_time: 1
-  user_id: 93349d7e32484aa0a441c5d6bc9aa93f
-  access_token: 216711765.1677ed0.c27445ce4a65464b8002f8cef44a038a
+  user_id: '1507559584'
+  access_token: 1507559584.1677ed0.c7a981902538403f9cd7566c952a27fa

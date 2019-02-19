@@ -1,6 +1,5 @@
 <header class="main-header post-head">
-        {% if header.image %}
-         {{dump(page.header.cover|first.name)}}
+        {% if header.cover %}
          <img class="header-image" src="{{page.media[page.header.cover|first.name].url}}" srcset="{{page.media[page.header.cover|first.name].srcset()}}">
         {% endif %}
     <nav class="main-nav {% if header.image %}overlay{% endif %} clearfix">

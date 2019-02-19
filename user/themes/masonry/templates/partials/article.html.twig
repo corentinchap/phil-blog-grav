@@ -1,5 +1,5 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-    {% if post.header.image %}
+    {% if post.header.cover %}
         <figure class="post-image" itemprop="image">
             <a href="{{ post.url }}" class="js-ajax-link">
             <img src="{{ post.media[post.header.cover|first.name].cropResize(350, 350).url }}" width="100%" height="100%" alt=""></a>

@@ -3,6 +3,12 @@ title: 'StVO der Sozialistischen Republik Vietnam '
 taxonomy:
     category: blog-post
     tag: blog
+cover:
+    'user/pages/01.blog/02.StVO der Sozialistischen Republik Vietnam/evdQgOAR4iKIU7C.jpg':
+        name: evdQgOAR4iKIU7C.jpg
+        type: image/jpeg
+        size: 18512
+        path: 'user/pages/01.blog/02.StVO der Sozialistischen Republik Vietnam/evdQgOAR4iKIU7C.jpg'
 ---
 
 Straßenverkehrsordnung der Sozialistischen Republik Vietnam

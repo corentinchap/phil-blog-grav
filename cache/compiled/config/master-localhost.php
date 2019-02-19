@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1550457362,
-    'checksum' => '81a78f583363175583b7308bad83f3ef',
+    'timestamp' => 1550565706,
+    'checksum' => '154f8964153da11b2e99e97a79b2955c',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,7 +23,7 @@ return [
             ],
             'plugins/instagram' => [
                 'file' => 'user/config/plugins/instagram.yaml',
-                'modified' => 1550442714
+                'modified' => 1550565705
             ],
             'plugins/jscomments' => [
                 'file' => 'user/config/plugins/jscomments.yaml',
@@ -404,8 +404,8 @@ return [
                 'feed_parameters' => [
                     'count' => 2,
                     'cache_time' => 1,
-                    'user_id' => '93349d7e32484aa0a441c5d6bc9aa93f',
-                    'access_token' => '216711765.1677ed0.c27445ce4a65464b8002f8cef44a038a'
+                    'user_id' => '1507559584',
+                    'access_token' => '1507559584.1677ed0.c7a981902538403f9cd7566c952a27fa'
                 ]
             ],
             'jscomments' => [
@@ -577,14 +577,6 @@ return [
                     2 => [
                         'width' => 1500,
                         'quality' => 87
-                    ],
-                    3 => [
-                        'width' => 2500,
-                        'quality' => 85
-                    ],
-                    4 => [
-                        'width' => 3500,
-                        'quality' => 82
                     ]
                 ]
             ]

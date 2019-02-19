@@ -4,6 +4,12 @@ media_order: 'IMG_4858.JPG,Bildschirmfoto 2019-02-11 um 16.13.22.png,IMG_6451.JP
 taxonomy:
     category: blog-post
     tag: blog
+cover:
+    user/pages/01.blog/01.willkommen-im-jahr-des-schweins/UI0C7AuemOVXtol.JPG:
+        name: UI0C7AuemOVXtol.JPG
+        type: image/jpeg
+        size: 675561
+        path: user/pages/01.blog/01.willkommen-im-jahr-des-schweins/UI0C7AuemOVXtol.JPG
 ---
 
 Dem Mondkalender folgend fällt der Jahreswechsel in vielen asiatischen Ländern auf den Zeitraum Ende Januar/Anfang Februar. 

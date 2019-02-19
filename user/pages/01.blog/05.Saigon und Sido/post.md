@@ -10,6 +10,12 @@ image:
         type: image/JPG
         size: 987254
         path: 'user/pages/01.blog/05.Saigon und Sido/BPSATukOoMFEWnJ.JPG'
+cover:
+    'user/pages/01.blog/05.Saigon und Sido/iRUpOxclIs1FXMy.jpg':
+        name: iRUpOxclIs1FXMy.jpg
+        type: image/jpeg
+        size: 163698
+        path: 'user/pages/01.blog/05.Saigon und Sido/iRUpOxclIs1FXMy.jpg'
 ---
 
 Wenn Sido in „Mein Block" sein Berlin beschreibt und von „hohen Häußern, dicker Luft und ein paar Bäumen" spricht kann man schnell Parallelen zwischen den beiden Städten finden. Was aus der Ferne abschreckend wirken mag, verwandelt sich jedoch wie in Sidos Hitsingle schnell in ein wahres Füllhorn an Möglichkeiten und Chancen, sofern man der Stadt die Chance gewährt auf den zweiten Blick zu gefallen.  

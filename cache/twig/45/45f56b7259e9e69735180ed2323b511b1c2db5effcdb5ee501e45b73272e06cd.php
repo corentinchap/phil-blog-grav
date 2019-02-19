@@ -20,11 +20,11 @@ class __TwigTemplate_c53c6f33c194cccdc92fbe14fa0a9e71550c4339ef0fb7dba0300777490
         $context['_seq'] = twig_ensure_traversable(twig_slice($this->env, (isset($context["feed"]) ? $context["feed"] : null), 0, (isset($context["count"]) ? $context["count"] : null)));
         foreach ($context['_seq'] as $context["_key"] => $context["post"]) {
             // line 2
-            echo "    <li><a href=\"";
+            echo "    <span><a href=\"";
             echo $this->getAttribute($context["post"], "link", []);
             echo "\" target=\"_blank\"><img src=\"";
             echo $this->getAttribute($context["post"], "image", []);
-            echo "\" alt=\"\"></a></li>
+            echo "\" alt=\"\"></a></span>
 ";
         }
         $_parent = $context['_parent'];
@@ -58,7 +58,7 @@ class __TwigTemplate_c53c6f33c194cccdc92fbe14fa0a9e71550c4339ef0fb7dba0300777490
     public function getSourceContext()
     {
         return new Twig_Source("{% for post in feed|slice(0, count)  %}
-    <li><a href=\"{{ post.link }}\" target=\"_blank\"><img src=\"{{ post.image }}\" alt=\"\"></a></li>
+    <span><a href=\"{{ post.link }}\" target=\"_blank\"><img src=\"{{ post.image }}\" alt=\"\"></a></span>
 {% endfor %}
 ", "partials/instagram.html.twig", "C:\\Users\\Coco_\\Documents\\GitHub\\blog-phil\\user\\themes\\masonry\\templates\\partials\\instagram.html.twig");
     }

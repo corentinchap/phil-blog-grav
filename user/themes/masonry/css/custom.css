@@ -69,13 +69,14 @@
     position: absolute;
     width: 100%;
     left: 0;
-    top: 150px;
+    top:150px;
     -webkit-filter: brightness(90%);
     filter: brightness(90%);
     -webkit-transform: translateY(-45%);
     transform: translateY(-45%);
 }
 .main-header.home .header-image {
+    top: 0;
     -webkit-transform: translateY(-25%);
     transform: translateY(-25%);
 }
@@ -95,5 +96,18 @@ body.nav-opened .nav-cover {
   @media screen and (max-width: 500px) {
     .subscribe-button a{
         font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 1380px) and (min-width:900px) {
+    .home.main-header{
+        height:68vh;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .main-header .header-image{
+        width: unset;
+        height: 140%;
     }
   }

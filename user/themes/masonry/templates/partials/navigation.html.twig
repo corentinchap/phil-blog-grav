@@ -1,0 +1,29 @@
+<input type="checkbox" id="show-menu" class="show-menu" />
+<div class="nav">
+    <h3 class="nav-title">{{ 'THEME_MASONRY.MENU_TITLE'|t }}</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        {% for page in pages.children %}
+        {% if page.visible %}
+        {% set current_page = (page.active or page.activeChild) ? 'nav-current' : '' %}
+        <li class="nav-{{page.slug}} {{ current_page }}" role="presentation"><a href="{{ page.url }}">{{ page.menu }}</a></li>
+        
+            {% for article in page.children %}
+                    <li class="nav-article {{ current_page }}" role="presentation"><a href="{{ article.url }}">{{ article.menu }}</a></li>
+            {% endfor %}
+        
+        {% endif %}
+        {% endfor %}
+    </ul>
+           
+    <div class="instagram-wrapper">
+      {{ instagram_feed() }}
+    </div>
+
+    <div class="subscribe-button">
+        <a href="https://www.instagram.com/fairmont1388/">Follow me on Instagram !</a>
+    </div>
+</div>
+<span class="nav-cover"></span>

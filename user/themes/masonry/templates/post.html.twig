@@ -1,0 +1,78 @@
+{% embed 'partials/base.html.twig' %}
+
+{% block body %}
+<body class="post-template nav-closed" itemscope itemtype="http://schema.org/Article">
+{% endblock %}
+
+{% block content %}
+
+{% include 'partials/header.html.twig' %}
+
+<main class="content" role="main">
+    <article class="post">
+        <header class="post-header">
+            {% include 'partials/breadcrumbs.html.twig' %}
+            <h1 class="post-title">{{page.title}}</h1>
+            <section class="post-meta">
+               <time class="post-date" datetime="{{ page.date | date(site.date_short) }}">{{ page.date | date(site.date_short) }}</time>
+                {% if page.taxonomy.tag|length > 0 %}
+                    on {% for tag in page.taxonomy.tag %}<span class="post-tag-{{tag}}"><a href="{{ base_url }}/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a></span>{%if not loop.last %}, {% endif %}{% endfor %}
+                {% endif %}
+            </section>
+        </header>
+
+        <section class="post-content">
+            {{content}}
+            {% if config.plugins.jscomments.enabled %}
+                
+                {{ jscomments()|raw }}
+                
+            {% endif %}
+        </section>
+
+
+    </article>
+</main>
+ {{ dump(page.nextSibling.header) }} 
+{% if page.nextSibling.header.image %}
+   <aside class="read-next">
+    {% if not page.isFirst %}
+    <a class="read-next-story {% if page.nextSibling.header.image %}" style="background-image: url(/{{page.nextSibling.header.image|first.path}}){% else %}no-cover{% endif %}" href="{{page.nextSibling.url}}">
+        <section class="post">
+            <h2>{{page.nextSibling.title}}</h2>
+            <p>{{ page.nextSibling.content | striptags | truncate(140) }}&hellip;</p>
+        </section>
+    </a>
+    {{dump(page.nextSibling.header.image|first.path)}}
+    {% endif %}
+    {% if not page.isLast %}
+    <a class="read-next-story prev {% if page.prevSibling.header.image %}" style="background-image: url(/{{ page.prevSibling.header.image|first.path }}){% else %}no-cover{% endif %}" href="{{page.prevSibling.url}}">
+        <section class="post">
+            <h2>{{page.prevSibling.title}}</h2>
+            <p>{{ page.prevSibling.content | striptags | truncate(140) }}&hellip;</p>
+        </section>
+    </a>
+    {% endif %}
+</aside> 
+{% endif %}
+
+
+
+{% endblock %}
+
+{% block bottom %}
+
+    {% if site.disqus %}
+        <script>
+        (function() {
+        var d = document, s = d.createElement('script');
+        s.src = '//{{site.disqus}}.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+    {% endif %}
+
+{% endblock %}
+
+{% endembed %}

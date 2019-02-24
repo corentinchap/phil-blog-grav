@@ -31,7 +31,7 @@ class __TwigTemplate_0c1600ce06098293f9b0097e2a76be40a57307286f938c3b700f9a92c09
     public function block_content($context, array $blocks = [])
     {
         // line 5
-        echo "<header class=\"main-header\">
+        echo "<header class=\"main-header home\">
         <img class=\"header-image\" src=\"";
         // line 6
         echo $this->getAttribute(twig_first($this->env, $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", []), "images", [])), "url", []);
@@ -162,7 +162,7 @@ class __TwigTemplate_0c1600ce06098293f9b0097e2a76be40a57307286f938c3b700f9a92c09
 {% set collection = page.collection() %}
 
 {% block content %}
-<header class=\"main-header\">
+<header class=\"main-header home\">
         <img class=\"header-image\" src=\"{{page.media.images|first.url}}\" srcset=\"{{page.media.images|first.srcset()}}\">
 
     <nav class=\"main-nav overlay clearfix\">

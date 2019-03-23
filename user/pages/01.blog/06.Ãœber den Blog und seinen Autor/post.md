@@ -4,6 +4,12 @@ media_order: 'IMG_5601-min.JPG,lFNM1c5DUfmhRG9.jpg,IMG_7086 Kopie-min.JPG,IMG_84
 taxonomy:
     category: post
     tag: blog
+cover:
+    'user/pages/01.blog/06.Ãœber den Blog und seinen Autor/8SOEnwt0Yq2gaHU.png':
+        name: 8SOEnwt0Yq2gaHU.png
+        type: image/png
+        size: 1021560
+        path: 'user/pages/01.blog/06.Ãœber den Blog und seinen Autor/8SOEnwt0Yq2gaHU.png'
 ---
 
 Geboren und aufgewachsen in ländlichen Gefilden des schönen Schwabenlandes hat es mich nach Beendigung meiner Ausbildung zum Studium ins Rheinland geführt. 

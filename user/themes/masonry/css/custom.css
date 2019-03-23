@@ -1,3 +1,6 @@
+.content .wrapper{
+    padding: 1em 0 1em 0;
+}
 .site-wrapper{
     overflow: hidden;
 }
@@ -119,5 +122,49 @@ body.nav-opened .nav-cover {
     .main-header .header-image{
         width: unset;
         height: 140%;
+    }
+    .scroll-down{
+        display: block;
+    }
+  }
+  @supports (-ms-ime-align: auto) {
+    /* Microsoft EdgeV13&14 CSS styles go here */
+    @media screen and (max-width: 1380px) and (min-width:900px) {
+        .main-header.home{
+            height: 55vh;
+        }
+        #content {
+            position: relative;
+            top: 100px;
+        }
+        
+      }
+    @media screen and (max-width:1024px) {
+        .content .wrapper {
+            padding: 0;
+        }
+        
+    }
+    
+    @media screen and (min-width: 1381px){
+        #content {
+            position: relative;
+            top: 200px;
+        }
+    }
+
+    .content{
+        background-color: #fff;
+        position: relative;
+    }
+    
+    @media screen and (max-width: 900px){
+        .main-header .header-image{
+            width: 100%;
+            height: unset;
+        }
+        .content .wrapper {
+            padding: 1em 0 1em 0;
+        }
     }
   }

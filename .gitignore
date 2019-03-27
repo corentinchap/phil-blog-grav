@@ -2,3 +2,6 @@ user/pages
 cache
 cahce/doctrine
 cache/gpm
+logs
+images
+user/pages/*.jpeg

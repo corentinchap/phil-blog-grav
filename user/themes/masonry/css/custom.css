@@ -1,6 +1,40 @@
 .content .wrapper{
     padding: 1em 0 1em 0;
 }
+.home-template .content .wrapper{
+    padding: 0 0 1em 0;
+}
+.triangle{
+    color:#fff;
+    float:right;
+    font-size: 25px;
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    -ms-transition: -ms-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out; 
+}
+.has-children:hover .triangle{  
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+}
+.non-clickable-menu-item{
+    color: #b8b8b8;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.nav ul {
+    padding: 77px 3% 5%;
+}
+.has-children{
+    background-color: #272727;
+    border-radius: 5px;
+}
+.has-children ul {
+    padding: 5px 0 5px 20px;
+    display: hidden;
+}
+.text-center{text-align: center}
 .site-wrapper{
     overflow: hidden;
 }
@@ -129,16 +163,7 @@ body.nav-opened .nav-cover {
   }
   @supports (-ms-ime-align: auto) {
     /* Microsoft EdgeV13&14 CSS styles go here */
-    @media screen and (max-width: 1380px) and (min-width:900px) {
-        .main-header.home{
-            height: 55vh;
-        }
-        #content {
-            position: relative;
-            top: 100px;
-        }
-        
-      }
+ 
     @media screen and (max-width:1024px) {
         .content .wrapper {
             padding: 0;
@@ -146,13 +171,6 @@ body.nav-opened .nav-cover {
         
     }
     
-    @media screen and (min-width: 1381px){
-        #content {
-            position: relative;
-            top: 200px;
-        }
-    }
-
     .content{
         background-color: #fff;
         position: relative;

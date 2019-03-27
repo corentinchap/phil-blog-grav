@@ -20,9 +20,17 @@
 
         $('.has-children').find('ul').hide();
              
-        $('.has-children').hover(function(e){
-            e.preventDefault();
-            $(this).find('ul').slideToggle('slow');
+        $('ul').find('.has-children').on('tap click',function(e){
+            $(this).find('.triangle').toggleClass('open');
+            
+            $(this).find('ul').slideToggle('slow', function(){
+                e.preventDefault();
+            });
+
+            $(this).children().on('tap click', function(){
+                console.log($(this).find('a').attr('href'));
+                window.location.replace($(this).find('a').attr('href'));
+            });
         });
 
     });

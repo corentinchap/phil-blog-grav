@@ -12,7 +12,7 @@
     -ms-transition: -ms-transform .4s ease-in-out;
     transition: transform .4s ease-in-out; 
 }
-.has-children:hover .triangle{  
+.has-children .triangle.open{  
     transform:rotate(-90deg);
     -ms-transform:rotate(-90deg);
     -webkit-transform:rotate(-90deg);
@@ -120,14 +120,21 @@
 body.nav-opened .nav-cover {
     right: 450px;
 }
+@media screen and (max-width:500px) {
+    body.nav-opened .site-wrapper{
+        transform: translate3d(-293px,0,0);
+        -webkit-transform: translate3d(-293px,0,0);
+    }
+    .nav{width:293px;}
+}
 @media screen and (min-width: 500px) {
     .nav{
-        width: 450px;
+        width: 550px;
         overflow: hidden;
     }
     body.nav-opened .site-wrapper {
-        -webkit-transform: translate3D(-448px,0,0);
-        transform: translate3D(-448px,0,0);
+        -webkit-transform: translate3D(-548px,0,0);
+        transform: translate3D(-548px,0,0);
     }
     .blog-logo img {
         height: 90px;

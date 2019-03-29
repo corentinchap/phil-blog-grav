@@ -3,8 +3,8 @@
         {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
         {% if p.children.visible.count > 0 %}
             <li class="has-children {{ current_page }}">
-                {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
-                <span class="non-clickable-menu-item">{{ p.menu }} <span class="triangle">&#9664;</span></span>
+                <input type="checkbox" name="blog" id="blog">
+                <label for="blog">{{ p.menu }}</label>
                 <ul>
                     {{ _self.loop(p) }}
                 </ul>
@@ -12,21 +12,19 @@
         {% else %}
             <li>
                 <a href="{{ p.url }}">
-                    {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
                     {{ p.menu }}
                 </a>
             </li>
         {% endif %}
     {% endfor %}
 {% endmacro %}
-
 <input type="checkbox" id="show-menu" class="show-menu" />
 <div class="nav">
     <h3 class="nav-title">{{ 'THEME_MASONRY.MENU_TITLE'|t }}</h3>
     <a href="#" class="nav-close">
         <span class="hidden">Close</span>
     </a>
-    <ul>
+    <ul class="accordion-menu">
        {% if true %}
             {{ _self.loop(pages) }}
         {% else %}
@@ -34,7 +32,6 @@
                 {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
                 <li class="{{ current_page }}">
                     <a href="{{ page.url }}">
-                        {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
                         {{ page.menu }}
                     </a>
                 </li>
@@ -47,7 +44,7 @@
     </div>
 
     <div class="subscribe-button">
-        <a href="https://www.instagram.com/fairmont1388/">Follow me on Instagram !</a>
+        <a href="https://www.instagram.com/philipp_reiss_abgefatzt/">Follow me on Instagram !</a>
     </div>
 </div>
 <span class="nav-cover"></span>

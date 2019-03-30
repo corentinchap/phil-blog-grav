@@ -1,3 +1,13 @@
+.archive-plus a:hover {
+  text-decoration: underline;
+}
+.archive_month .archive_year {
+  font-weight: bold;
+}
+.archive-plus a {
+  padding: 0px;
+  text-decoration: none;
+}
 .archive-plus, .archive-plus ul, #sidebar .sidebar-content .archive-plus ul {
   padding: 0;
   list-style: none;
@@ -12,8 +22,8 @@
 }
 .archive-plus li {
   border-bottom: 0;
-  line-height: 2em;
-  line-height: 2rem;
+  line-height: 3em;
+  line-height: 3rem;
 }
 .archive-plus ul {
   margin-left: 1em;
@@ -43,7 +53,7 @@
   height: 1rem;
   line-height: 1rem;
   margin-right: 1em;
-  margin-right: 1rem;
+  margin-right: 2rem;
   vertical-align: middle;
 }
 .archive-plus label:after {
@@ -75,6 +85,6 @@
 .archive-plus ul.last a:before {
   content: "\25B6";
   font-size: small;
-  margin-right: .35em;
-  margin-right: .35rem;
+  margin-right: 1em;
+  margin-right: 1rem;
 }

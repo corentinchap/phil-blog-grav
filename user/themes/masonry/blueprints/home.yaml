@@ -1,4 +1,4 @@
-title: Home
+title: Blog
 '@extends':
     type: default
 form:
@@ -13,4 +13,5 @@ form:
         avoid_overwriting: false
         accept:
           - image/*
+
 

@@ -17,22 +17,44 @@
             $("body").toggleClass("nav-opened nav-closed");
         });
 
-        /*
-        $('.has-children').find('ul').hide();
-             
-        $('ul').find('.has-children').on('tap click',function(e){
-            $(this).find('.triangle').toggleClass('open');
-            
-            $(this).find('ul').slideToggle('slow', function(){
-                e.preventDefault();
-            });
+        // var srcset = $('.main-header .header-image').attr('srcset');
+        // // /user/pages/01.blog/ag94P5AlRGpEkwN@2x.jpg 1000w, /user/pages/01.blog/ag94P5AlRGpEkwN.jpg 640w
+        
+        // var resolutions = $(".main-header .header-image").attr("srcset").split(",");
+        // var resolution =[];
 
-            $(this).children().on('tap click', function(){
-                console.log($(this).find('a').attr('href'));
-                window.location.replace($(this).find('a').attr('href'));
-            });
-        });
-        */
+        // for(var item in resolutions){
+        //     console.log(item);
+        //     console.log(item.split(' '));
+        //    // resolution.push(item);
+        // }
+        // console.log(resolution);
+
+        //$('.main-header').css('background', )
+            // background: -webkit-image-set( url('path/to/image') 1x, url('path/to/high-res-image') 2x );
+
+        
+        
+         window.onresize = resizeHeader;
+         window.onload = resizeHeader;
+
+        function resizeHeader() {
+            if(true)
+            {
+                var height = $('img.header-image').css('height');
+                $('.main-header').css('height', height);
+            }
+            else{
+                $('img.header-image').css('height',$('.main.header').css('height'));
+            }
+            
+        }
+        // Responsive header
+        var header = $('header.main-header');
+
+        $(document).on('load resize', function(e){
+            console.log('rdy sir');
+        })
        var accordionsMenu = $('.accordion-menu');
 
         if( accordionsMenu.length > 0 ) {

@@ -1,8 +1,16 @@
+html{
+    overflow-x: hidden;
+}
 .content .wrapper{
     padding: 1em 0 1em 0;
 }
 .home-template .content .wrapper{
     padding: 0 0 1em 0;
+}
+.menu-button{
+    border-radius: 5px;
+    color: #000;
+    background: #fff;
 }
 /* --- NAV MENU ----*/
 .accordion-menu input[type=checkbox]{
@@ -18,7 +26,6 @@
     padding: .6rem 4%;
     font-size: 1.4rem;
     color: #ffffff;
-    cursor: pointer;
 }
 
 .accordion-menu label::after{
@@ -60,7 +67,6 @@
 .accordion-menu .has-children{
     background-color: #272727;
     border-radius: 5px;
-    cursor: pointer;
 }
 .accordion-menu input[type=checkbox]:checked + label + ul,
 .accordion-menu input[type=checkbox]:checked + label:nth-of-type(n) + ul {
@@ -76,6 +82,9 @@
 .text-center{text-align: center}
 .site-wrapper{
     overflow: hidden;
+}
+.header-image-mobile{
+    display: none;
 }
 .insta-icon{    
     width: 22%;
@@ -98,13 +107,7 @@
     right: 0;
 }
 .subscribe-button{
-    margin: 0 20px 0 10px;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    font-weight: bold;
-    font-size: 15px;
+    padding:0;
 }
 .subscribe-button a{
     color: #000!important;
@@ -131,6 +134,9 @@
 .nav-article {
     margin-left: 10px;
 }
+.main-header{
+    position: relative;
+}
 .main-header .inner {
      padding-top: 50px;
 }
@@ -151,11 +157,14 @@
     position: absolute;
     width: 100%;
     left: 0;
-    top:150px;
     -webkit-filter: brightness(90%);
     filter: brightness(90%);
-    -webkit-transform: translateY(-45%);
-    transform: translateY(-45%);
+}
+.vertical{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40%;
 }
 .main-header.home .header-image {
     top: 0;
@@ -192,20 +201,19 @@ body.nav-opened .nav-cover {
     .instagram-wrapper img {
         width: 40%;
     }
-   .main-header .header-image{
-    -webkit-transform: translateY(-45%) translateX(-40%);
-    transform: translateY(-45%) translateX(-28%);
-   }
+
   }
 
-  @media screen and (max-width: 1630px) and (min-width:1024px) {
-   
+  @media screen and (max-width: 1380px) and (min-width:900px) {
+    .home.main-header{
+        height:68vh;
+    }
   }
   
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 900px) {
     .main-header .header-image{
-        width: unset;
-        height: 140%;
+        width: auto;
+        height: 500px;
     }
     .scroll-down{
         display: block;
@@ -236,4 +244,3 @@ body.nav-opened .nav-cover {
         }
     }
   }
-  
